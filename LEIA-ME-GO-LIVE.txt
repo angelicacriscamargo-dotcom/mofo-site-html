@@ -1,0 +1,10 @@
+mofo.ws — pacote GO-LIVE (gerado 18/11/2026 a partir do mofo-site 12.zip)
+
+SUBIR NA HOSTGATOR (public_html)
+1. Backup completo do WordPress atual (arquivos de public_html + banco) e mover o WordPress pra fora de public_html.
+2. Subir TODO o conteúdo desta pasta pra public_html, incluindo o arquivo oculto .htaccess.
+3. Abrir https://mofo.ws e testar: home, /endereco-fiscal/, /portal/ (tem que ir pra /unidades/portal/),
+   /escritorios-privativos/ (tem que ir pra /privativos/), um endereço inexistente (tem que mostrar a 404).
+4. Search Console: enviar https://mofo.ws/sitemap.xml e pedir indexação das páginas principais.
+
+Este arquivo (LEIA-ME-GO-LIVE.txt) pode ser apagado depois de subir.

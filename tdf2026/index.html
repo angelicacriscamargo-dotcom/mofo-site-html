@@ -1,0 +1,3400 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light only">
+<title>TDF 2026 — Roteiro Grupo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+<style>
+/* ── RESET & BASE ─────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  color-scheme: light only;
+  --sand:     #f5f0e8;
+  --sand2:    #ede7d9;
+  --sand3:    #e4ddd0;
+  --cream:    #faf8f4;
+  --bark:     #3d2e1e;
+  --bark2:    #5c4530;
+  --moss:     #3d5a3e;
+  --moss2:    #2d4430;
+  --orange:   #e8602c;
+  --orange2:  #c04e22;
+  --slate:    #6b7c6e;
+  --warm-gray:#9a9088;
+  --line:     #d9d2c6;
+  --white:    #ffffff;
+  --badge-tdf:#e8602c;
+  --badge-bike:#3d5a3e;
+  --badge-travel:#7a6a55;
+}
+
+html { scroll-behavior: smooth; color-scheme: light; }
+
+body {
+  background: var(--cream);
+  color: var(--bark);
+  font-family: 'Lora', Georgia, serif;
+  font-size: 15px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── TYPOGRAPHY ───────────────────────────────── */
+h1, h2, h3, .label {
+  font-family: 'DM Sans', 'Helvetica Neue', sans-serif;
+}
+
+.eyebrow {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--warm-gray);
+}
+
+/* ── HERO ─────────────────────────────────────── */
+.hero {
+  background: var(--moss2);
+  color: var(--sand);
+  padding: 72px 0 56px;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(ellipse 80% 60% at 80% 20%, rgba(232,96,44,.18) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 80% at 10% 90%, rgba(61,90,62,.6) 0%, transparent 70%);
+}
+.hero-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 32px;
+  position: relative;
+  z-index: 1;
+}
+.hero-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 20px;
+  padding: 5px 14px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: .06em;
+  color: rgba(245,240,232,.85);
+  margin-bottom: 24px;
+}
+.hero h1 {
+  font-size: clamp(36px, 6vw, 72px);
+  font-weight: 700;
+  line-height: 1.05;
+  color: var(--sand);
+  margin-bottom: 8px;
+  letter-spacing: -.02em;
+}
+.hero-sub {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-size: 18px;
+  color: rgba(245,240,232,.7);
+  margin-bottom: 40px;
+}
+.hero-stats-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(0,0,0,.15);
+  backdrop-filter: blur(8px);
+}
+.hero-stat {
+  flex: 1;
+  min-width: 110px;
+  padding: 18px 20px;
+  border-right: 1px solid rgba(255,255,255,.1);
+  text-align: center;
+}
+.hero-stat:last-child { border-right: none; }
+.hero-stat-value {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--sand);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.hero-stat-label {
+  font-size: 11px;
+  color: rgba(245,240,232,.55);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* ── LAYOUT ───────────────────────────────────── */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* ── SECTION HEADER ───────────────────────────── */
+.section { padding: 64px 0; border-top: 1px solid var(--line); }
+.section:first-of-type { border-top: none; }
+
+.section-header {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 36px;
+}
+.section-num {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--orange);
+  letter-spacing: .1em;
+  min-width: 28px;
+}
+.section-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--bark);
+  letter-spacing: -.02em;
+}
+.section-line {
+  flex: 1;
+  height: 1px;
+  background: var(--line);
+}
+
+/* ── RESERVA CARDS ────────────────────────────── */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+  align-items: stretch;
+}
+
+.card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+.card .card-links {
+  margin-top: auto;
+  padding-top: 14px;
+}
+/* Reserva section: 3 cols max para não ficarem muito estreitas */
+.section:first-of-type .cards-grid {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.card-icon {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+.card-eyebrow {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--warm-gray);
+  margin-bottom: 4px;
+}
+.card-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--bark);
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+.card-detail {
+  font-size: 13px;
+  color: var(--bark2);
+  line-height: 1.6;
+  margin-bottom: 4px;
+}
+.card-detail strong { color: var(--bark); font-family: 'DM Sans', sans-serif; font-size: 12px; }
+
+.card-alert {
+  margin-top: 12px;
+  padding: 10px 12px;
+  background: #fef5ec;
+  border-left: 3px solid var(--orange);
+  border-radius: 0 6px 6px 0;
+  font-size: 12px;
+  color: #7a4a2a;
+  line-height: 1.5;
+}
+.card-alert.danger {
+  background: #fce8e8;
+  border-color: #d94040;
+  color: #7a2020;
+}
+
+.card-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+.card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--moss);
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 1px solid var(--moss);
+  border-radius: 6px;
+  transition: background .15s, color .15s;
+}
+.card-link:hover { background: var(--moss); color: var(--white); }
+
+/* ── CONFIRMATION INFO (reserva numbers) ─────── */
+.conf-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  padding: 8px 10px;
+  background: var(--sand);
+  border-radius: 6px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+}
+.conf-label { color: var(--warm-gray); }
+.conf-value { font-weight: 700; color: var(--bark); letter-spacing: .04em; }
+.conf-pin { color: var(--warm-gray); }
+.conf-pin span { font-weight: 700; color: var(--moss); }
+
+/* ── ALTERNATIVAS (lista de plano B/C/D dentro de um card) ─── */
+.alt-list {
+  margin-top: 14px;
+  padding: 14px 16px;
+  background: rgba(135, 119, 87, 0.06);
+  border-left: 3px solid var(--moss);
+  border-radius: 8px;
+}
+.alt-list-title {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--bark);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.alt-item {
+  padding: 10px 0;
+  border-bottom: 1px dashed var(--line);
+}
+.alt-item:last-child {
+  border-bottom: 0;
+}
+.alt-item-header {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+.alt-item-num {
+  display: inline-block;
+  min-width: 24px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  background: var(--moss);
+  color: var(--white);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.alt-item-name {
+  font-family: 'Lora', serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--bark);
+  flex: 1;
+}
+.alt-item-rating {
+  font-size: 12px;
+  color: var(--warm-gray);
+  white-space: nowrap;
+}
+.alt-item-meta {
+  margin-left: 32px;
+  font-size: 12px;
+  color: var(--bark);
+  line-height: 1.5;
+}
+.alt-item-meta strong { color: var(--bark); }
+.alt-item-links {
+  margin-left: 32px;
+  margin-top: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.alt-item-links a {
+  font-size: 11px;
+  color: var(--moss);
+  text-decoration: none;
+  border: 1px solid var(--line);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+.alt-item-links a:hover { background: var(--moss); color: var(--white); }
+.alt-item-tag {
+  display: inline-block;
+  font-size: 10px;
+  padding: 2px 6px;
+  background: var(--moss);
+  color: var(--white);
+  border-radius: 3px;
+  margin-left: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+}
+.alt-item-tag.tag-current {
+  background: var(--orange1);
+}
+.alt-item-tag.tag-unavail {
+  background: #c44;
+}
+.alt-item-tag.tag-auto {
+  background: #5a8c5e;
+}
+
+/* ── COLLAPSIBLE CARDS (Reservas + Campings) ─── */
+.card-collapsible {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: box-shadow .2s, border-color .2s;
+}
+.card-collapsible[open] {
+  border-color: var(--moss);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+}
+.card-collapsible summary {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+  transition: background .15s;
+}
+.card-collapsible summary::-webkit-details-marker { display: none; }
+.card-collapsible summary:hover { background: rgba(135, 119, 87, 0.05); }
+.card-collapsible[open] summary {
+  border-bottom: 1px solid var(--line);
+  background: rgba(135, 119, 87, 0.04);
+}
+.card-thumb {
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--sand);
+}
+.card-thumb-icon {
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: var(--sand);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-thumb-icon svg {
+  width: 26px;
+  height: 26px;
+  color: var(--moss);
+  stroke-width: 1.5;
+}
+.card-summary-content {
+  flex: 1;
+  min-width: 0;
+}
+.card-summary-content .card-eyebrow {
+  margin-bottom: 2px;
+}
+.card-summary-content .card-title {
+  margin-bottom: 4px;
+  font-size: 15px;
+}
+.card-summary-line {
+  font-size: 12px;
+  color: var(--warm-gray);
+  line-height: 1.4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card-chevron {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  color: var(--warm-gray);
+  transition: transform .25s;
+}
+.card-collapsible[open] .card-chevron {
+  transform: rotate(180deg);
+  color: var(--moss);
+}
+.card-collapsible-body {
+  padding: 16px;
+  animation: card-expand .25s ease-out;
+}
+@keyframes card-expand {
+  from { opacity: 0; transform: translateY(-6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.card-collapsible-body .card-detail { font-size: 13px; }
+.card-collapsible-body .card-detail:first-child { margin-top: 0; }
+.card-collapsible-body > .card-photo {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 14px;
+}
+@media (max-width: 600px) {
+  .card-thumb, .card-thumb-icon { width: 48px; height: 48px; }
+  .card-thumb-icon svg { width: 22px; height: 22px; }
+  .card-collapsible summary { padding: 12px 14px; gap: 12px; }
+  .card-summary-content .card-title { font-size: 14px; }
+}
+
+/* Grid de cards colapsáveis: largura total em mobile, 2 colunas em telas grandes */
+/* Usa !important pra sobrescrever a regra de `.section:first-of-type .cards-grid` */
+.cards-grid:has(.card-collapsible) {
+  grid-template-columns: 1fr !important;
+  gap: 10px !important;
+}
+@media (min-width: 900px) {
+  .cards-grid:has(.card-collapsible) {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/* ── TIMELINE ─────────────────────────────────── */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.day-card {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--white);
+  margin-bottom: 16px;
+}
+
+.day-header {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  border-bottom: 1px solid var(--line);
+}
+
+.day-date {
+  padding: 20px 16px;
+  background: var(--sand);
+  border-right: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.day-date-num {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 38px;
+  font-weight: 800;
+  color: var(--bark);
+  line-height: 1;
+}
+.day-date-month {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--warm-gray);
+  margin-top: 2px;
+}
+.day-date-week {
+  font-size: 11px;
+  color: var(--warm-gray);
+  margin-top: 4px;
+}
+
+.day-heading {
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+}
+.day-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  width: fit-content;
+}
+.badge-tdf    { background: #fde8df; color: var(--orange2); }
+.badge-bike   { background: #e0eede; color: var(--moss2); }
+.badge-travel { background: var(--sand2); color: var(--bark2); }
+.badge-arrive { background: #e8eef8; color: #2a5090; }
+.badge-return { background: #f0e8f8; color: #5a2a90; }
+
+.day-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--bark);
+  letter-spacing: -.01em;
+}
+.day-location {
+  font-size: 12px;
+  color: var(--warm-gray);
+  font-family: 'DM Sans', sans-serif;
+}
+
+.day-body { padding: 0 20px 20px; }
+
+/* schedule table */
+.schedule {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0 12px;
+}
+.schedule tr { border-bottom: 1px solid var(--sand2); }
+.schedule tr:last-child { border-bottom: none; }
+.schedule td {
+  padding: 8px 0;
+  font-size: 13px;
+  vertical-align: top;
+  line-height: 1.5;
+}
+.time-col {
+  width: 72px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--orange);
+  white-space: nowrap;
+  padding-right: 12px;
+}
+.event-col { color: var(--bark); }
+
+/* ride stats strip */
+.ride-stats {
+  display: flex;
+  gap: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 14px 0;
+}
+.ride-stat {
+  flex: 1;
+  padding: 10px 12px;
+  text-align: center;
+  border-right: 1px solid var(--line);
+  background: var(--sand);
+}
+.ride-stat:last-child { border-right: none; }
+.ride-stat-value {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--moss);
+  line-height: 1;
+}
+.ride-stat-label {
+  font-size: 10px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--warm-gray);
+  font-family: 'DM Sans', sans-serif;
+  margin-top: 3px;
+}
+
+/* route tag */
+.route-tag {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--bark2);
+  padding: 6px 0;
+}
+.route-arrow { color: var(--orange); font-weight: 700; }
+
+/* col tags */
+.col-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0;
+}
+.col-tag {
+  border: 1px solid var(--moss);
+  border-radius: 8px;
+  padding: 6px 12px;
+  background: rgba(61,90,62,.04);
+}
+.col-name {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--moss);
+}
+.col-alt {
+  font-size: 11px;
+  color: var(--slate);
+  margin-top: 1px;
+}
+
+/* day note / alert */
+.day-note {
+  font-size: 12px;
+  color: var(--slate);
+  line-height: 1.6;
+  padding: 10px 0 0;
+  border-top: 1px solid var(--sand2);
+  margin-top: 12px;
+}
+.day-alert {
+  margin-top: 12px;
+  padding: 10px 14px;
+  background: #fef5ec;
+  border-left: 3px solid var(--orange);
+  border-radius: 0 8px 8px 0;
+  font-size: 12px;
+  color: #7a4a2a;
+  line-height: 1.5;
+}
+
+/* komoot link */
+.komoot-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--moss);
+  text-decoration: none;
+  padding: 6px 12px;
+  border: 1px solid rgba(61,90,62,.3);
+  border-radius: 6px;
+  background: rgba(61,90,62,.04);
+  margin-top: 10px;
+  transition: background .15s;
+}
+.komoot-link:hover { background: rgba(61,90,62,.1); }
+
+/* ── COLS GRID ────────────────────────────────── */
+.cols-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 10px;
+}
+.col-grid-item {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 14px;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+.col-grid-num {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--orange);
+  min-width: 20px;
+}
+.col-grid-name {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--bark);
+  line-height: 1.3;
+}
+.col-grid-day {
+  font-size: 11px;
+  color: var(--warm-gray);
+  margin-top: 2px;
+}
+
+/* ── FOOTER ───────────────────────────────────── */
+footer {
+  background: var(--moss2);
+  color: var(--sand);
+  padding: 40px 0;
+  text-align: center;
+  margin-top: 64px;
+}
+footer .footer-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -.01em;
+  margin-bottom: 6px;
+}
+footer .footer-sub {
+  font-size: 13px;
+  color: rgba(245,240,232,.6);
+}
+
+/* ── RESPONSIVE ───────────────────────────────── */
+.campings-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1100px) {
+  .campings-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-stats-row { flex-direction: column; }
+  .hero-stat { border-right: none; border-bottom: 1px solid rgba(255,255,255,.1); }
+  .cards-grid { grid-template-columns: 1fr; }
+  .day-header { grid-template-columns: 70px 1fr; }
+  .cols-grid { grid-template-columns: repeat(2, 1fr); }
+  .container { padding: 0 16px; }
+}
+
+
+/* ── DAY CARD inner layout ─── */
+.day-card {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--white);
+  margin-bottom: 16px;
+}
+.day-card-inner {
+  display: grid;
+  grid-template-columns: 88px 1fr;
+}
+.day-date {
+  padding: 20px 12px;
+  background: var(--sand);
+  border-right: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  padding-top: 22px;
+}
+.day-date-num {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--bark);
+  line-height: 1;
+}
+.day-date-month {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--warm-gray);
+}
+.day-date-week {
+  font-size: 11px;
+  color: var(--warm-gray);
+  text-align: center;
+}
+.day-body-col {
+  display: flex;
+  flex-direction: column;
+}
+.day-body-header {
+  padding: 16px 20px 12px;
+  border-bottom: 1px solid var(--sand2);
+}
+.day-photo {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid var(--line);
+}
+
+/* ── FLIGHT TIMELINE (Seção Voos & VIP) ─────────── */
+.flight-block {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 24px 28px;
+  margin-bottom: 18px;
+}
+.flight-block-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--bark);
+  letter-spacing: -.01em;
+  margin-bottom: 4px;
+}
+.flight-block-sub {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  color: var(--warm-gray);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  margin-bottom: 18px;
+}
+.flight-leg {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 18px;
+  padding: 16px 0;
+  border-top: 1px solid var(--sand2);
+}
+.flight-leg:first-of-type { border-top: none; padding-top: 0; }
+.flight-leg-num {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--moss);
+  font-weight: 600;
+}
+.flight-leg-code {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  color: var(--warm-gray);
+  margin-top: 4px;
+}
+.flight-route {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.flight-airport {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--bark);
+}
+.flight-arrow {
+  color: var(--moss);
+  font-size: 18px;
+}
+.flight-airport-name {
+  font-size: 12px;
+  color: var(--warm-gray);
+}
+.flight-meta {
+  display: flex;
+  gap: 24px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+  font-family: 'Lora', serif;
+  font-size: 14px;
+  color: var(--bark);
+}
+.flight-meta strong { color: var(--moss); font-weight: 600; }
+.flight-layover {
+  margin: 10px 0;
+  padding: 10px 14px;
+  background: var(--sand);
+  border-left: 3px solid var(--moss);
+  border-radius: 6px;
+  font-family: 'Lora', serif;
+  font-size: 13px;
+  color: var(--bark);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.flight-arrival-tip {
+  margin-top: 14px;
+  padding: 12px 16px;
+  background: var(--orange1);
+  border-left: 3px solid var(--orange2);
+  border-radius: 6px;
+  font-family: 'Lora', serif;
+  font-size: 14px;
+  color: var(--bark);
+}
+.flight-arrival-tip strong { color: var(--orange2); }
+
+.vip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 14px;
+  margin-top: 14px;
+}
+.vip-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 16px 18px;
+}
+.vip-airport {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--moss);
+  font-weight: 600;
+}
+.vip-name {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--bark);
+  margin: 4px 0 6px;
+}
+.vip-detail {
+  font-family: 'Lora', serif;
+  font-size: 13px;
+  color: var(--bark);
+  line-height: 1.55;
+  margin-bottom: 4px;
+}
+.vip-detail strong { color: var(--moss); font-weight: 600; }
+.vip-access {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 3px 8px;
+  background: var(--sand);
+  border-radius: 4px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  color: var(--warm-gray);
+  margin-right: 4px;
+}
+
+/* ── ROUTE TIMELINE (Seção Motorhomes) ───────────── */
+.route-timeline {
+  position: relative;
+  padding-left: 0;
+}
+.route-day {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 18px;
+  padding: 14px 0;
+  border-top: 1px solid var(--sand2);
+}
+.route-day:first-child { border-top: none; padding-top: 0; }
+.route-day-marker {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--moss);
+  padding: 6px 10px;
+  background: var(--sand);
+  border-radius: 6px;
+  text-align: center;
+  height: fit-content;
+  letter-spacing: -.01em;
+}
+.route-day-marker-static {
+  background: transparent;
+  color: var(--warm-gray);
+  border: 1px dashed var(--sand2);
+  font-weight: 500;
+}
+.route-day-marker-end {
+  background: var(--moss);
+  color: white;
+}
+.route-day-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--bark);
+  margin-bottom: 6px;
+  letter-spacing: -.01em;
+}
+.route-day-title-static {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-size: 14px;
+  color: var(--warm-gray);
+  padding-top: 6px;
+}
+.route-day-static .route-day-content { opacity: 0.7; }
+.route-day-stops {
+  font-family: 'Lora', serif;
+  font-size: 14px;
+  color: var(--bark);
+  line-height: 1.6;
+}
+.route-stop {
+  padding: 3px 0;
+}
+.route-stop strong {
+  color: var(--moss);
+  font-weight: 600;
+  display: inline-block;
+  min-width: 60px;
+}
+.route-tag-pill {
+  display: inline-block;
+  padding: 2px 8px;
+  background: var(--sand);
+  border-radius: 10px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--warm-gray);
+  margin-left: 6px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+.route-tag-tour {
+  background: var(--orange1);
+  color: var(--orange2);
+}
+
+@media (max-width: 600px) {
+  .route-day { grid-template-columns: 60px 1fr; gap: 12px; }
+  .route-day-marker { font-size: 12px; padding: 4px 6px; }
+}
+.day-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--bark);
+  letter-spacing: -.01em;
+  margin-top: 6px;
+}
+.day-location {
+  font-size: 12px;
+  color: var(--warm-gray);
+  font-family: 'DM Sans', sans-serif;
+  margin-top: 2px;
+}
+.day-body-content { padding: 0 20px 20px; }
+
+/* conf row */
+.conf-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin: 8px 0 0;
+  padding: 8px 12px;
+  background: var(--sand);
+  border-radius: 8px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+}
+.conf-label { color: var(--warm-gray); }
+.conf-value { font-weight: 700; color: var(--bark); }
+.conf-sep { color: var(--line); }
+.conf-pin { color: var(--warm-gray); }
+.conf-pin span { font-weight: 700; color: var(--moss); }
+
+/* card links group */
+.card-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+/* ride stat divider (remove old) */
+.ride-stat-divider { display: none; }
+
+/* komoot inline link */
+.komoot-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--moss);
+  text-decoration: none;
+  padding: 6px 12px;
+  border: 1px solid rgba(61,90,62,.3);
+  border-radius: 6px;
+  background: rgba(61,90,62,.04);
+  margin-top: 10px;
+  transition: background .15s;
+}
+.komoot-inline:hover { background: rgba(61,90,62,.1); }
+
+@media (max-width: 600px) {
+  .day-card-inner { grid-template-columns: 70px 1fr; }
+}
+/* ── CARD PHOTO ──────────────────────────────────── */
+.card.card-with-photo {
+  padding: 0;
+  overflow: hidden;
+}
+.card-photo {
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid var(--line);
+}
+.card-with-photo .card-body {
+  padding: 18px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.card-with-photo .card-icon { display: none; }
+
+/* ── LUCIDE ICONS ───────────────────────────────── */
+.lucide-icon {
+  width: 14px;
+  height: 14px;
+  stroke-width: 2;
+  vertical-align: -2px;
+  display: inline-block;
+}
+.card-icon-svg {
+  width: 26px;
+  height: 26px;
+  stroke-width: 1.5;
+  color: var(--moss);
+  margin-bottom: 12px;
+  display: block;
+}
+.confirmed-icon { color: var(--moss); stroke-width: 2.25; }
+.alert-icon { color: var(--orange2); stroke-width: 2.25; }
+.lucide-inline { display: inline-flex; align-items: center; gap: 5px; }
+</style>
+</head>
+<body data-rsssl=1>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-tag">🇪🇸 Barcelona · Girona · Pirineus · 3–14 Julho 2026</div>
+    <h1>Tour de France<br>2026</h1>
+    <p class="hero-sub">Roteiro do grupo — 8 ciclistas, 2 motorhomes</p>
+    <div class="hero-stats-row">
+      <div class="hero-stat">
+        <div class="hero-stat-value">12</div>
+        <div class="hero-stat-label">Dias</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-value">6</div>
+        <div class="hero-stat-label">Dias de pedal</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-value">10</div>
+        <div class="hero-stat-label">Cols</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-value">~435</div>
+        <div class="hero-stat-label">km pedalados</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-value">~11k</div>
+        <div class="hero-stat-label">metros D+</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-value">4</div>
+        <div class="hero-stat-label">Etapas TDF</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main>
+
+<!-- SEÇÃO 01 — RESERVAS -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2 class="section-title">Reservas</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="cards-grid">
+
+    <details class="card-collapsible">
+      <summary>
+        <div class="card-thumb" style="background-image: url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=200&h=200&fit=crop&q=75&fm=jpg');"></div>
+        <div class="card-summary-content">
+          <div class="card-eyebrow">Voo · Royal Air Maroc</div>
+          <div class="card-title">GRU ↔ BCN · via Casablanca</div>
+          <div class="card-summary-line">03/07 ida · 14/07 volta · Reserva ECXMLN</div>
+        </div>
+        <svg class="card-chevron" data-lucide="chevron-down"></svg>
+      </summary>
+      <div class="card-collapsible-body">
+        <img decoding="async" class="card-photo" src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&h=240&fit=crop&q=75&fm=jpg" alt="Asa de avião acima das nuvens" loading="lazy">
+        <div class="card-detail"><strong>Ida:</strong> 03/07 — 00h30 (GRU) → 19h10 (BCN)</div>
+        <div class="card-detail"><strong>Volta:</strong> 14/07 — 13h45 (BCN) → 22h30 (GRU)</div>
+        <div class="card-detail" style="font-size: 12px; color: var(--warm-gray); margin-top: 6px;">Reserva ECXMLN · Detalhes completos + salas VIP na seção 03</div>
+        <div class="card-links">
+          <a href="https://www.skyscanner.com.br" class="card-link" target="_blank">↗ Skyscanner</a>
+        </div>
+      </div>
+    </details>
+
+    <details class="card-collapsible">
+      <summary>
+        <div class="card-thumb" style="background-image: url('https://images.unsplash.com/photo-1583422409516-2895a77efded?w=200&h=200&fit=crop&q=75&fm=jpg');"></div>
+        <div class="card-summary-content">
+          <div class="card-eyebrow">Hostel Barcelona · 03–06/07 · Reserva A</div>
+          <div class="card-title">Sant Jordi Sagrada Família</div>
+          <div class="card-summary-line">Freser 5, Sant Martí · 4 hóspedes</div>
+        </div>
+        <svg class="card-chevron" data-lucide="chevron-down"></svg>
+      </summary>
+      <div class="card-collapsible-body">
+        <img decoding="async" class="card-photo" src="https://images.unsplash.com/photo-1583422409516-2895a77efded?w=800&h=240&fit=crop&q=75&fm=jpg" alt="Vista aérea de Barcelona com a Sagrada Família" loading="lazy">
+        <div class="card-detail"><strong>Endereço:</strong> Freser, 5, Sant Martí, 08026 Barcelona</div>
+        <div class="card-detail"><strong>Check-in:</strong> 03/07 às 14h &nbsp;·&nbsp; <strong>Check-out:</strong> 06/07 até 11h</div>
+        <div class="card-detail"><strong>Hóspedes:</strong> Marcio · Pedro Nuno · Felipe Leite · Adriano Hydalgo</div>
+        <div class="card-detail"><strong>Conf.:</strong> 6309.239.048 &nbsp;·&nbsp; <strong>PIN:</strong> 4250</div>
+        <div class="card-detail" style="margin-top: 6px; font-size: 12px; color: #666;"><svg class="lucide-icon alert-icon" data-lucide="triangle-alert"></svg> Depósito caução €10/pessoa em dinheiro na chegada · reembolsado no check-out</div>
+        <div class="card-links">
+          <a href="https://maps.google.com/?q=Freser+5,+Sant+Martí,+Barcelona" class="card-link" target="_blank">↗ Maps</a>
+        </div>
+      </div>
+    </details>
+
+    <details class="card-collapsible">
+      <summary>
+        <div class="card-thumb" style="background-image: url('https://cf.bstatic.com/xdata/images/hotel/max1024x768/656782137.jpg?k=f4ad326e6865ed2cb0c14e41ef3d77d54481cc5893496fd1fe5286d7d522e9e7&o=');"></div>
+        <div class="card-summary-content">
+          <div class="card-eyebrow">Hotel Barcelona · 03–06/07 · Reserva B</div>
+          <div class="card-title">ByPillow House</div>
+          <div class="card-summary-line">Rubió i Ors 3, Horta-Guinardó · 4 hóspedes</div>
+        </div>
+        <svg class="card-chevron" data-lucide="chevron-down"></svg>
+      </summary>
+      <div class="card-collapsible-body">
+        <img decoding="async" class="card-photo" src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/656782137.jpg?k=f4ad326e6865ed2cb0c14e41ef3d77d54481cc5893496fd1fe5286d7d522e9e7&o=" alt="Quarto do ByPillow House com papel de parede botânico" loading="lazy">
+        <div class="card-detail"><strong>Endereço:</strong> Rubió i Ors, 3, Horta-Guinardó, 08041 Barcelona</div>
+        <div class="card-detail"><strong>Check-in:</strong> 03/07 das 14h–22h &nbsp;·&nbsp; <strong>Check-out:</strong> 06/07 das 7h–11h</div>
+        <div class="card-detail"><strong>Hóspedes:</strong> Lucas · Ricardo · Iago · Fabio · Quarto Família (4 camas de solteiro)</div>
+        <div class="card-detail"><strong>Conf.:</strong> 6831.707.773 &nbsp;·&nbsp; <strong>PIN:</strong> 8662 &nbsp;·&nbsp; Tel: +34 936 67 22 32</div>
+        <div class="card-detail" style="margin-top: 6px; font-size: 12px; color: #666;"><svg class="lucide-icon alert-icon" data-lucide="info"></svg> Metrô Maragall a 5 min a pé · entrada por código · terraço na cobertura · sem refeições incluídas</div>
+        <div class="card-links">
+          <a href="https://maps.google.com/?q=Rubió+i+Ors+3,+Horta-Guinardó,+Barcelona" class="card-link" target="_blank">↗ Maps</a>
+        </div>
+      </div>
+    </details>
+
+    <details class="card-collapsible">
+      <summary>
+        <div class="card-thumb" style="background-image: url('https://cf.bstatic.com/xdata/images/hotel/max1024x768/565145978.jpg?k=648897df470fab7732fdb6260910445512f935dd18da2ad23a20a91ccc266021&o=');"></div>
+        <div class="card-summary-content">
+          <div class="card-eyebrow">Hotel Barcelona · 13–14/07 · Noite pré-voo</div>
+          <div class="card-title">B&B Hotel Barcelona Viladecans</div>
+          <div class="card-summary-line">Olof Palme 24, Viladecans · 7 pessoas · 3 quartos</div>
+        </div>
+        <svg class="card-chevron" data-lucide="chevron-down"></svg>
+      </summary>
+      <div class="card-collapsible-body">
+        <img decoding="async" class="card-photo" src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/565145978.jpg?k=648897df470fab7732fdb6260910445512f935dd18da2ad23a20a91ccc266021&o=" alt="Fachada do B&B Hotel Barcelona Viladecans ao entardecer" loading="lazy">
+        <div class="card-detail"><strong>Endereço:</strong> Olof Palme, 24, 08840 Viladecans (~15 min do aeroporto)</div>
+        <div class="card-detail"><strong>Check-in:</strong> 13/07 às 14h &nbsp;·&nbsp; <strong>Check-out:</strong> 14/07 às 5h–12h</div>
+        <div class="card-detail"><strong>Hóspedes:</strong> 7 pessoas · 3 quartos (1 triplo + 2 duplos)</div>
+        <div class="card-detail"><strong>Conf.:</strong> 5396.483.940 &nbsp;·&nbsp; <strong>PIN:</strong> 4074</div>
+        <div class="card-detail"><strong>Inclui:</strong> Café da manhã · Estacionamento €6/dia · Wifi grátis</div>
+        <div class="card-detail" style="margin-top: 6px; font-size: 12px; color: #666;"><svg class="lucide-icon alert-icon" data-lucide="triangle-alert"></svg> Cancelamento gratuito até 1 dia antes · Contato: +34 932 99 36 58</div>
+        <div class="card-links">
+          <a href="https://maps.google.com/?q=Olof+Palme+24,+Viladecans,+Barcelona" class="card-link" target="_blank">↗ Maps</a>
+        </div>
+      </div>
+    </details>
+
+    <details class="card-collapsible">
+      <summary>
+        <div class="card-thumb" style="background-image: url('img/Autocampers-dk-i-Schweiz-i-en-Family-Plus-fra-McRe.jpg');"></div>
+        <div class="card-summary-content">
+          <div class="card-eyebrow">Motorhome · McRent Gavà</div>
+          <div class="card-title">2 × Family Standard</div>
+          <div class="card-summary-line">Retirada 06/07 12h15 · Devolução 13/07 10h · McRent Gavà</div>
+        </div>
+        <svg class="card-chevron" data-lucide="chevron-down"></svg>
+      </summary>
+      <div class="card-collapsible-body">
+        <img decoding="async" class="card-photo" src="img/Autocampers-dk-i-Schweiz-i-en-Family-Plus-fra-McRe.jpg" alt="Motorhome McRent Family Standard em estrada de montanha" loading="lazy">
+        <div class="card-detail"><strong>Retirada:</strong> 06/07 às 12h15 — McRent Gavà (Carrer de la Forja, 13) <svg class="lucide-icon confirmed-icon" data-lucide="circle-check"></svg> <em>Confirmado</em></div>
+        <div class="card-detail"><strong>Devolução:</strong> 13/07 até 10h — McRent Gavà (Carrer de la Forja, 13)</div>
+        <div class="conf-row"><span class="conf-label">Reserva A · BAR209</span><span class="conf-value">Tipo A70 · Márcio Bertasso</span></div>
+        <div class="conf-row"><span class="conf-label">Reserva B · BAR522</span><span class="conf-value">Tipo T68 · Fabio Muritiba</span></div>
+        <div class="card-detail" style="margin-top: 6px; font-size: 12px; color: #666;"><svg class="lucide-icon alert-icon" data-lucide="info"></svg> <strong>A70</strong> (BAR209): cama de casal grande + sala de jantar conversível em cama · <strong>T68</strong> (BAR522): 2 camas individuais traseiras</div>
+        <div class="card-alert"><svg class="lucide-icon alert-icon" data-lucide="triangle-alert"></svg> Devolução até 10h é apertada — Girona→McRent Gavà leva ~1h35, sair de Girona às 8h no dia 13</div>
+
+        <div style="margin-top: 12px; padding: 10px 12px; background: rgba(135, 119, 87, 0.08); border-radius: 8px; font-size: 12px; line-height: 1.5; color: var(--bark);">
+          <div style="font-family: 'DM Sans', sans-serif; font-weight: 600; font-size: 12px; color: var(--bark); margin-bottom: 6px;">💰 Estimativa de custos da rota (2 motorhomes)</div>
+          <div style="margin-bottom: 5px;"><strong>⛽ Combustível:</strong> ~€440 total · base Fiat Ducato 2.3 diesel, tanque 90L, consumo ~10 L/100km, autonomia ~900 km. <em>Dica: diesel na Espanha é 15-25 cts mais barato — abastecer antes de cruzar pra França.</em></div>
+          <div style="margin-bottom: 5px;"><strong>🛣️ Pedágios:</strong> Espanha gratuita (AP-7 Tarragona–La Jonquera liberada em 2021). França ~<strong>€340-380</strong> total (Classe 3, motorhome >3m). <em>Confirmar altura com McRent — se <3m vira Classe 2 e cai pra ~€200-220.</em></div>
+          <div><strong>📲 Tag eletrônica:</strong> <strong>Bip&Go Europe</strong> funciona França + Espanha (mesmo badge). ~€15-20/badge no período, precisa 2 badges, pedir online 2-4 semanas antes. <em>Vale pra evitar filas no verão. Alternativa: cartão de crédito internacional com chip funciona em todas as cabines.</em></div>
+        </div>
+        <div class="card-links">
+          <a href="https://www.mcrent.eu" class="card-link" target="_blank">↗ MCRent</a>
+        </div>
+      </div>
+    </details>
+
+    <details class="card-collapsible">
+      <summary>
+        <div class="card-thumb" style="background-image: url('img/velodrom-odeon-slider.jpg?v=1746387939');"></div>
+        <div class="card-summary-content">
+          <div class="card-eyebrow">Aluguel de Bikes · Loja 1 · 5 bikes</div>
+          <div class="card-title">Velodrom Girona</div>
+          <div class="card-summary-line">Pujada de Sant Domènec 6 · Marcio, Felipe, Adriano, Iago, Lucas</div>
+        </div>
+        <svg class="card-chevron" data-lucide="chevron-down"></svg>
+      </summary>
+      <div class="card-collapsible-body">
+        <img decoding="async" class="card-photo" src="img/velodrom-odeon-slider.jpg?v=1746387939" alt="Interior da Velodrom Odeon Girona — teatro restaurado do século XIX" loading="lazy">
+        <div class="card-detail"><strong>Endereço:</strong> Pujada de Sant Domènec, 6, 17004 Girona</div>
+        <div class="card-detail"><strong>Hóspedes:</strong> Marcio #4534 · Felipe #4317 · Adriano #4315 · Iago #4370 · Lucas #4600</div>
+        <div class="card-detail"><strong>Retirada:</strong> 06/07 entre 19h30–20h <svg class="lucide-icon confirmed-icon" data-lucide="circle-check"></svg> <em>Confirmado pela Velodrom em 17/05</em></div>
+        <div class="card-detail"><strong>Devolução:</strong> 12/07 à noite, ao chegar de Luchon (loja fecha 20h30 — dá tempo)</div>
+        <div class="card-links">
+          <a href="https://maps.google.com/?q=Pujada+de+Sant+Domènec+6,+Girona" class="card-link" target="_blank">↗ Maps</a>
+          <a href="https://www.velodrom.cc/global/bike-rental-girona/" class="card-link" target="_blank">↗ Velodrom</a>
+        </div>
+      </div>
+    </details>
+
+    <details class="card-collapsible">
+      <summary>
+        <div class="card-thumb" style="background-image: url('img/Front-shop-local-3-1024x746.jpeg');"></div>
+        <div class="card-summary-content">
+          <div class="card-eyebrow">Aluguel de Bikes · Loja 2 · 3 bikes</div>
+          <div class="card-title">CycleTours Catalonia</div>
+          <div class="card-summary-line">Carrer de Santa Eugènia 11 · Pedro Turrini, Fabio, Ricardo</div>
+        </div>
+        <svg class="card-chevron" data-lucide="chevron-down"></svg>
+      </summary>
+      <div class="card-collapsible-body">
+        <img decoding="async" class="card-photo" src="img/Front-shop-local-3-1024x746.jpeg" alt="Fachada da CycleTours Catalonia em Girona" loading="lazy">
+        <div class="card-detail"><strong>Endereço:</strong> Carrer de Santa Eugènia, 11, local 5, 17005 Girona</div>
+        <div class="card-detail"><strong>Hóspedes:</strong> Pedro Turrini · Fabio Muritiba · Ricardo Romonsini</div>
+        <div class="card-detail"><strong>Retirada:</strong> 06/07 à tarde — motorhome retirado 13h dá folga (loja fecha 18h)</div>
+        <div class="card-detail"><strong>Devolução:</strong> 12/07 à noite, ao chegar de Luchon (negociado fora do horário)</div>
+        <div class="card-alert"><svg class="lucide-icon alert-icon" data-lucide="triangle-alert"></svg> Confirmar com a loja a devolução fora do horário no dia 12 à noite (chegada ~18h30). Combinar entrega de chave/local.</div>
+        <div class="card-links">
+          <a href="https://maps.google.com/?q=Carrer+de+Santa+Eugènia+11,+Girona" class="card-link" target="_blank">↗ Maps</a>
+          <a href="http://www.cycletourscatalonia.com/" class="card-link" target="_blank">↗ CycleTours</a>
+        </div>
+      </div>
+    </details>
+
+    <details class="card-collapsible">
+      <summary>
+        <div class="card-thumb-icon"><svg data-lucide="ticket"></svg></div>
+        <div class="card-summary-content">
+          <div class="card-eyebrow">Transporte Barcelona · Hola BCN 48h</div>
+          <div class="card-title">Hola Barcelona Travel Card · 48h</div>
+          <div class="card-summary-line">€18,70/pessoa (com 10% off online) · cobre dias 04 e 05/07 + chegada aeroporto</div>
+        </div>
+        <svg class="card-chevron" data-lucide="chevron-down"></svg>
+      </summary>
+      <div class="card-collapsible-body">
+        <div class="card-detail"><strong>O que cobre:</strong> Viagens ilimitadas em metrô, ônibus TMB, NitBus, <strong>Funicular de Montjuïc</strong>, tram, FGC (Zona 1, inclui Tibidabo) e Rodalies (Zona 1) por 48 horas consecutivas a partir da 1ª validação.</div>
+        <div class="card-detail"><strong>Inclui também:</strong> 1 viagem de ida e 1 de volta entre aeroporto BCN e o centro pelo metrô L9 Sud (sem suplemento — economiza €5,15 cada).</div>
+        <div class="card-detail"><strong>NÃO cobre:</strong> Teleférico de Montjuïc (Telefèric), Aerobus (privado) e o Funicular do Tibidabo (Cuca de Llum).</div>
+        <div class="card-detail"><strong>Como funciona:</strong> compra antecipada no site oficial (10% off) → recebe voucher por e-mail → vai a qualquer máquina TMB do metrô (incluindo aeroporto) → insere o código → recebe a cartão físico → primeira validação ativa o relógio de 48h.</div>
+        <div class="card-detail"><strong>Estratégia de ativação:</strong> Validar pela primeira vez na <strong>manhã de sábado 04/07 (~9h)</strong> ao sair do hotel — as 48h cobrem o dia 04 e o dia 05 inteiros, até a manhã de segunda 06/07 (~9h). Os trajetos aeroporto↔hotel (chegada sexta + saída segunda) ficam por conta de Uber/Cabify (2 vans pra grupo de 8 com bagagem é mais prático que metrô).</div>
+        <div class="card-detail" style="margin-top: 6px; font-size: 12px; color: #666;"><svg class="lucide-icon alert-icon" data-lucide="info"></svg> <strong>Alternativa Hola BCN 72h (€27,30/pessoa):</strong> faz sentido apenas se decidirem fazer aeroporto↔hotel de metrô em vez de Uber. Cobre desde a chegada na sexta às 19h até a saída na segunda às 19h.</div>
+        <div class="card-alert"><svg class="lucide-icon confirmed-icon" data-lucide="circle-check"></svg> <strong>Para 8 pessoas, 48h:</strong> 8 × €18,70 = <strong>€149,60 total</strong> (vs ~€200 em bilhetes individuais T-Casual nos 2 dias)</div>
+        <div class="card-links">
+          <a href="https://www.holabarcelona.com/tickets/hola-bcn-barcelona-travel-card" class="card-link" target="_blank">↗ Comprar (site oficial TMB)</a>
+        </div>
+      </div>
+    </details>
+  </div>
+  </div>
+</section>
+
+<!-- SEÇÃO 02 — CAMPINGS -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2 class="section-title">Campings &amp; Pernoites Motorhome</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="cards-grid">
+
+    <details class="card-collapsible">
+      <summary>
+        <div class="card-thumb-icon"><svg data-lucide="circle-parking"></svg></div>
+        <div class="card-summary-content">
+          <div class="card-eyebrow">Girona · 1ª noite (06→07/07)</div>
+          <div class="card-title">Parking Vayreda Autocaravanas · Plano A</div>
+          <div class="card-summary-line">⭐ 3,9 · Pasaje Massaguer · 37 vagas · 3 alternativas listadas</div>
+        </div>
+        <svg class="card-chevron" data-lucide="chevron-down"></svg>
+      </summary>
+      <div class="card-collapsible-body">
+        <div class="card-detail"><strong>Endereço:</strong> Pasaje de Massaguer, 14, 17001 Girona</div>
+        <div class="card-detail"><strong>Telefone:</strong> +34 972 22 62 88</div>
+        <div class="card-detail"><strong>Reserva:</strong> Obrigatória — app/site telpark.com · pagamento por cartão · €25/24h</div>
+        <div class="card-detail"><strong>Atenção:</strong> 37 vagas estreitas — para motorhomes acima de 6,5m verificar pré-chegada</div>
+        <div class="card-detail" style="margin-top: 6px; font-size: 12px; color: #666;"><svg class="lucide-icon alert-icon" data-lucide="info"></svg> Mesmo ponto usado na volta, na noite 12→13. <strong>Ainda a fazer:</strong> reservar 2 datas (06→07 e 12→13) na app Telpark.</div>
+
+        <div class="alt-list">
+          <div class="alt-list-title">📋 Lista de alternativas em ordem de prioridade</div>
+
+          <div class="alt-item">
+            <div class="alt-item-header">
+              <span class="alt-item-num">A</span>
+              <span class="alt-item-name">Parking Vayreda / Girona Camper Park</span>
+              <span class="alt-item-rating">⭐ 3,9 (320)</span>
+            </div>
+            <div class="alt-item-meta">
+              <strong>Endereço:</strong> Pasaje Massaguer, 14 · <strong>Tel:</strong> +34 972 22 62 88<br>
+              <strong>Tarifa:</strong> €25/24h · <strong>Estrutura:</strong> WC + 1 chuveiro adaptado · 10 min do centro a pé · reserva pela app
+            </div>
+            <div class="alt-item-links">
+              <a href="https://www.telpark.com/en/cities/girona/vayreda-autocaravanas-car-park/" target="_blank">↗ Reservar</a>
+              <a href="https://maps.google.com/?q=Parking+Vayreda+Girona" target="_blank">↗ Maps</a>
+            </div>
+          </div>
+
+          <div class="alt-item">
+            <div class="alt-item-header">
+              <span class="alt-item-num">B</span>
+              <span class="alt-item-name">Àrea Autocaravanes Girona <span class="alt-item-tag" style="background:#5a8c5e">grátis</span></span>
+              <span class="alt-item-rating">⭐ 4,0 (698)</span>
+            </div>
+            <div class="alt-item-meta">
+              <strong>Endereço:</strong> 17007 Girona (em Devesa, perto do centro)<br>
+              <strong>Tarifa:</strong> GRATUITA · <strong>Estrutura:</strong> Vidange + água potável · <strong>SEM CHUVEIRO</strong> · 10 min ao centro · só pernoite
+            </div>
+            <div class="alt-item-links">
+              <a href="https://maps.google.com/?q=Area+Autocaravanes+Devesa+Girona" target="_blank">↗ Maps</a>
+            </div>
+          </div>
+
+          <div class="alt-item">
+            <div class="alt-item-header">
+              <span class="alt-item-num">C</span>
+              <span class="alt-item-name">Càmping El Llac (Banyoles)</span>
+              <span class="alt-item-rating">⭐ 4,0 (1.368)</span>
+            </div>
+            <div class="alt-item-meta">
+              <strong>Endereço:</strong> Ctra. Circumval·lació de l&#8217;Estany, 17834 Porqueres, Banyoles (30 km N de Girona) · <strong>Tel:</strong> +34 972 57 03 05<br>
+              <strong>Estrutura:</strong> Piscina · bar/restaurante · sanitários completos · à beira do Lago de Banyoles
+            </div>
+            <div class="alt-item-links">
+              <a href="https://maps.google.com/?q=Camping+El+Llac+Banyoles" target="_blank">↗ Maps</a>
+            </div>
+          </div>
+
+          <div class="alt-item">
+            <div class="alt-item-header">
+              <span class="alt-item-num">D</span>
+              <span class="alt-item-name">Camping Can Toni Manescal</span>
+              <span class="alt-item-rating">⭐ 3,8 (197)</span>
+            </div>
+            <div class="alt-item-meta">
+              <strong>Endereço:</strong> Llambilles, 10 km S de Girona · <strong>Tel:</strong> +34 647 71 46 54<br>
+              <strong>Estrutura:</strong> Pequeno, acolhe ciclistas · pizza no jantar · distância de bike até Girona
+            </div>
+            <div class="alt-item-links">
+              <a href="https://maps.google.com/?q=Camping+Can+Toni+Llambilles" target="_blank">↗ Maps</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <details class="card-collapsible">
+      <summary>
+        <div class="card-thumb-icon"><svg data-lucide="tent-tree"></svg></div>
+        <div class="card-summary-content">
+          <div class="card-eyebrow">Lourdes · 2 noites (07→08 e 09→10/07)</div>
+          <div class="card-title">Camping Plein Soleil ★★ · Plano A</div>
+          <div class="card-summary-line">⭐ 4,7 · Av. du Monge · piscina · sanitários novos · 5 alternativas listadas</div>
+        </div>
+        <svg class="card-chevron" data-lucide="chevron-down"></svg>
+      </summary>
+      <div class="card-collapsible-body">
+        <div class="card-detail"><strong>Endereço:</strong> 11 Av. du Monge, 65100 Lourdes</div>
+        <div class="card-detail"><strong>Telefone:</strong> +33 6 23 14 64 38</div>
+        <div class="card-detail"><strong>Horário recepção:</strong> Todos os dias 8h30-20h</div>
+        <div class="card-detail"><strong>Avaliação:</strong> ⭐ 4,7 (477 avaliações) — a melhor pontuação entre os campings de Lourdes</div>
+        <div class="card-detail"><strong>Estrutura:</strong> Piscina coberta aquecida · sanitários muito limpos e novos · chuveiros com água quente · acolhe ciclistas · funcionários acolhedores</div>
+        <div class="card-detail"><strong>Distância do Santuário:</strong> 2,7 km · próximo a comércios</div>
+        <div class="card-detail" style="margin-top: 6px; font-size: 12px; color: #666;"><svg class="lucide-icon alert-icon" data-lucide="info"></svg> Noites separadas: a do dia 08→09 é na rampa do Tourmalet (ver card ao lado). Volta a Lourdes na noite 09→10.</div>
+
+        <div class="alt-list">
+          <div class="alt-list-title">📋 Lista de alternativas em ordem de prioridade</div>
+
+          <div class="alt-item">
+            <div class="alt-item-header">
+              <span class="alt-item-num">A</span>
+              <span class="alt-item-name">Camping Plein Soleil ★★</span>
+              <span class="alt-item-rating">⭐ 4,7 (477)</span>
+            </div>
+            <div class="alt-item-meta">
+              <strong>Endereço:</strong> 11 Av. du Monge · <strong>Tel:</strong> +33 6 23 14 64 38 · <strong>Dist. Santuário:</strong> 2,7 km<br>
+              <strong>Estrutura:</strong> Piscina coberta aquecida, sanitários muito limpos e novos, chuveiros com água quente
+            </div>
+            <div class="alt-item-links">
+              <a href="https://maps.google.com/?q=Camping+Plein+Soleil+Lourdes" target="_blank">↗ Maps</a>
+            </div>
+          </div>
+
+          <div class="alt-item">
+            <div class="alt-item-header">
+              <span class="alt-item-num">B</span>
+              <span class="alt-item-name">Le Moulin du Monge</span>
+              <span class="alt-item-rating">⭐ 4,4 (118)</span>
+            </div>
+            <div class="alt-item-meta">
+              <strong>Endereço:</strong> 28 Av. Jean Moulin · <strong>Tel:</strong> +33 5 62 94 28 15 · <strong>Dist. Santuário:</strong> 3,1 km<br>
+              <strong>Estrutura:</strong> Piscina aquecida + sauna, ambiente familiar, TV/foosball/trampolim
+            </div>
+            <div class="alt-item-links">
+              <a href="https://maps.google.com/?q=Camping+Le+Moulin+du+Monge+Lourdes" target="_blank">↗ Maps</a>
+            </div>
+          </div>
+
+          <div class="alt-item">
+            <div class="alt-item-header">
+              <span class="alt-item-num">C</span>
+              <span class="alt-item-name">Camping La Via Natura d&#8217;Arrouach</span>
+              <span class="alt-item-rating">⭐ 4,3 (362)</span>
+            </div>
+            <div class="alt-item-meta">
+              <strong>Endereço:</strong> 9 Rue des 3 Archanges · <strong>Tel:</strong> +33 5 62 42 11 43 · <strong>Dist. Santuário:</strong> 1,0 km (a mais próxima)<br>
+              <strong>Estrutura:</strong> Piscina + restaurante (bistrô vegetariano), próximo ao Lac de Lourdes, vista deslumbrante
+            </div>
+            <div class="alt-item-links">
+              <a href="https://maps.google.com/?q=Camping+Arrouach+Lourdes" target="_blank">↗ Maps</a>
+            </div>
+          </div>
+
+          <div class="alt-item">
+            <div class="alt-item-header">
+              <span class="alt-item-num">D</span>
+              <span class="alt-item-name">Camping Domec</span>
+              <span class="alt-item-rating">⭐ 4,2 (141)</span>
+            </div>
+            <div class="alt-item-meta">
+              <strong>Endereço:</strong> 3 Rte de Julos · <strong>Tel:</strong> +33 5 62 94 08 79 · <strong>Dist. Santuário:</strong> 2,2 km<br>
+              <strong>Estrutura:</strong> Pequeno e familiar, vista das montanhas, 10 min a pé do centro
+            </div>
+            <div class="alt-item-links">
+              <a href="https://maps.google.com/?q=Camping+Domec+Lourdes" target="_blank">↗ Maps</a>
+            </div>
+          </div>
+
+          <div class="alt-item">
+            <div class="alt-item-header">
+              <span class="alt-item-num">E</span>
+              <span class="alt-item-name">Camping Vieux Berger</span>
+              <span class="alt-item-rating">⭐ 4,1 (666)</span>
+            </div>
+            <div class="alt-item-meta">
+              <strong>Endereço:</strong> 2 Rte de Julos · <strong>Tel:</strong> +33 6 48 54 63 19 · <strong>Dist. Santuário:</strong> 2,3 km · <strong>Aberto 24h</strong><br>
+              <strong>Estrutura:</strong> Sanitários renovados, pão pra encomendar, dona dá carona à cidade · 2,8 km da Gruta a pé
+            </div>
+            <div class="alt-item-links">
+              <a href="https://maps.google.com/?q=Camping+Vieux+Berger+Lourdes" target="_blank">↗ Maps</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <details class="card-collapsible">
+      <summary>
+        <div class="card-thumb-icon"><svg data-lucide="mountain-snow"></svg></div>
+        <div class="card-summary-content">
+          <div class="card-eyebrow">Tourmalet · 1 noite (08→09/07)</div>
+          <div class="card-title">La Mongie — Place d&#8217;Arizes (véspera da Etapa 6)</div>
+          <div class="card-summary-line">Parking P3-P4, rampa leste · oficialmente recomendado em dias do Tour</div>
+        </div>
+        <svg class="card-chevron" data-lucide="chevron-down"></svg>
+      </summary>
+      <div class="card-collapsible-body">
+        <div class="card-detail"><strong>Onde:</strong> Place d&#8217;Arizes / Parking P3-P4, La Mongie (65200) — rampa leste do Tourmalet, a ~5 km do cume</div>
+        <div class="card-detail"><strong>Coordenadas:</strong> 42.9121, 0.1767 · Acesso pela D918</div>
+        <div class="card-detail"><strong>Tipo:</strong> Estacionamento gratuito, grande e plano, em frente às pistas da estação de esqui · vista panorâmica</div>
+        <div class="card-detail"><strong>Por quê:</strong> Em dias de Tour, os parkings P3 e P4 são <strong>oficialmente recomendados</strong> a motorhomes — outros pontos da subida ficam proibidos. Subir na véspera garante lugar e posição pra ver a passagem do pelotão no dia seguinte.</div>
+        <div class="card-alert"><svg class="lucide-icon alert-icon" data-lucide="triangle-alert"></svg> <strong>Confirmar fechamento da estrada</strong> — ligar pro turismo de Barèges-Tourmalet (+33 5 62 92 16 00) próximo à data. Cols grandes às vezes fecham na tarde da véspera. Subir logo após a chegada da etapa em Pau (dia 08) garante pegar a estrada aberta.</div>
+        <div class="card-links">
+          <a href="https://www.google.com/maps/place/Place+d'Arizes,+65200+La+Mongie,+France/@42.9120627,0.176674,17z" class="card-link" target="_blank">↗ Google Maps</a>
+        </div>
+      </div>
+    </details>
+
+    <details class="card-collapsible">
+      <summary>
+        <div class="card-thumb-icon"><svg data-lucide="tent"></svg></div>
+        <div class="card-summary-content">
+          <div class="card-eyebrow">Campan · 1 noite (10→11/07)</div>
+          <div class="card-title">Camping Municipal de Campan · Plano A</div>
+          <div class="card-summary-line">122 vagas · Euro-relais · ⭐ 3,8 · 4 alternativas listadas</div>
+        </div>
+        <svg class="card-chevron" data-lucide="chevron-down"></svg>
+      </summary>
+      <div class="card-collapsible-body">
+        <div class="card-detail"><strong>Endereço:</strong> Lartigue, 65710 Campan, Hautes-Pyrénées</div>
+        <div class="card-detail"><strong>Telefone:</strong> +33 5 62 91 83 17</div>
+        <div class="card-detail"><strong>Avaliação:</strong> ⭐ 3,8 (63 avaliações) · Aberto o ano todo</div>
+        <div class="card-detail"><strong>Estrutura:</strong> Ponto Euro-relais externo (vidange + água) · sanitários limpos · chuveiros quentes (instalações antigas mas funcionais) · A 50 m do lago e do rio</div>
+        <div class="card-alert"><svg class="lucide-icon alert-icon" data-lucide="triangle-alert"></svg> <strong>Reserva em andamento por e-mail</strong> — pedido enviado à Mairie (cabinet.mairie@ville-bagneresdebigorre.fr) pra noite 10→11/07. <em>Atenção: durante o Tour de France, o camping costuma lotar e exige reserva confirmada.</em></div>
+
+        <div class="alt-list">
+          <div class="alt-list-title">📋 Lista de alternativas em ordem de prioridade</div>
+
+          <div class="alt-item">
+            <div class="alt-item-header">
+              <span class="alt-item-num">A</span>
+              <span class="alt-item-name">Camping Municipal de Campan</span>
+              <span class="alt-item-rating">⭐ 3,8 (63)</span>
+            </div>
+            <div class="alt-item-meta">
+              <strong>Endereço:</strong> Lartigue, 65710 Campan · <strong>Tel:</strong> +33 5 62 91 83 17<br>
+              <strong>Estrutura:</strong> Vidange + água · chuveiros quentes · à beira do rio
+            </div>
+            <div class="alt-item-links">
+              <a href="https://maps.google.com/?q=Camping+Municipal+Campan+65710" target="_blank">↗ Maps</a>
+            </div>
+          </div>
+
+          <div class="alt-item">
+            <div class="alt-item-header">
+              <span class="alt-item-num">B</span>
+              <span class="alt-item-name">Welcome IV Véziaux <span class="alt-item-tag tag-auto">automático 24h</span></span>
+              <span class="alt-item-rating">⭐ 4,7 (392)</span>
+            </div>
+            <div class="alt-item-meta">
+              <strong>Endereço:</strong> Route de la Hourquette d&#8217;Ancizan, Station Touristique de Payolle · <strong>Tel:</strong> +33 6 33 45 92 85<br>
+              <strong>Estrutura:</strong> Totalmente automatizado · 24h sem recepção · serviços completos · ~€15/noite<br>
+              <strong>Vantagem estratégica:</strong> Localizado na rampa da Hourquette d&#8217;Ancizan/Aspin — vocês podem sair pedalando direto do camping
+            </div>
+            <div class="alt-item-links">
+              <a href="https://maps.google.com/?q=Welcome+IV+Veziaux+Payolle" target="_blank">↗ Maps</a>
+            </div>
+          </div>
+
+          <div class="alt-item">
+            <div class="alt-item-header">
+              <span class="alt-item-num">C</span>
+              <span class="alt-item-name">Camping L&#8217;Arriou Pyrénées</span>
+              <span class="alt-item-rating">⭐ 4,4 (236)</span>
+            </div>
+            <div class="alt-item-meta">
+              <strong>Endereço:</strong> 133 Rte des Cols, 65710 Beaudéan (8 km N de Campan) · <strong>Tel:</strong> +33 5 62 91 74 04<br>
+              <strong>Estrutura:</strong> Piscina · sanitários e chuveiros confirmados · bar/restaurante · serviço excepcional
+            </div>
+            <div class="alt-item-links">
+              <a href="https://maps.google.com/?q=Camping+L+Arriou+Beaudean" target="_blank">↗ Maps</a>
+            </div>
+          </div>
+
+          <div class="alt-item">
+            <div class="alt-item-header">
+              <span class="alt-item-num">D</span>
+              <span class="alt-item-name">Camping Caravaning du Layris</span>
+              <span class="alt-item-rating">⭐ 4,4 (36)</span>
+            </div>
+            <div class="alt-item-meta">
+              <strong>Endereço:</strong> Le Bourg, 65710 Campan (na vila) · <strong>Tel:</strong> +33 5 62 91 75 34<br>
+              <strong>Estrutura:</strong> Tranquilo · sombra · sanitários simples mas limpos · freezer disponível
+            </div>
+            <div class="alt-item-links">
+              <a href="https://maps.google.com/?q=Camping+du+Layris+Campan" target="_blank">↗ Maps</a>
+            </div>
+          </div>
+
+          <div class="alt-item">
+            <div class="alt-item-header">
+              <span class="alt-item-num">E</span>
+              <span class="alt-item-name">Camping L&#8217;Oree des Monts</span>
+              <span class="alt-item-rating">⭐ 4,3 (209)</span>
+            </div>
+            <div class="alt-item-meta">
+              <strong>Endereço:</strong> 2979 route du Col d&#8217;Aspin, La Séoube, 65710 Campan · <strong>Tel:</strong> +33 5 62 91 83 98<br>
+              <strong>Estrutura:</strong> À beira do rio · sanitários simples · pequena loja · ambiente tranquilo
+            </div>
+            <div class="alt-item-links">
+              <a href="https://maps.google.com/?q=Camping+Oree+des+Monts+La+Seoube" target="_blank">↗ Maps</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <details class="card-collapsible">
+      <summary>
+        <div class="card-thumb-icon"><svg data-lucide="mountain"></svg></div>
+        <div class="card-summary-content">
+          <div class="card-eyebrow">Luchon · 1 noite (11→12/07)</div>
+          <div class="card-title">Camping Pradelongue ★★★★ · Plano A</div>
+          <div class="card-summary-line">⭐ 4,5 · Moustajon · piscina aquecida · 3 alternativas listadas</div>
+        </div>
+        <svg class="card-chevron" data-lucide="chevron-down"></svg>
+      </summary>
+      <div class="card-collapsible-body">
+        <div class="card-detail"><strong>Endereço:</strong> 5 Les Tretes, 31110 Moustajon (5 km a norte de Bagnères-de-Luchon)</div>
+        <div class="card-detail"><strong>Telefone:</strong> +33 5 61 79 86 44</div>
+        <div class="card-detail"><strong>Tarifa:</strong> ~€41/noite com eletricidade pra 1 motorhome · valor inclui sanitários, chuveiros, piscina aquecida, wifi</div>
+        <div class="card-detail"><strong>Estrutura:</strong> 3 blocos sanitários novos · chuveiros com água quente · piscina aquecida · espaços pra crianças (futebol, tênis, vôlei, ping-pong) · supermercado vizinho (Intermarché) · food truck à noite</div>
+        <div class="card-detail"><strong>Por quê:</strong> Cliente recente do TDF descreveu como <em>&#8220;perfect location for TDF at Superbagnères&#8221;</em>. Vocês saem do camping e em 4 min de carro (ou pedalando) já estão no início da subida do Superbagnères. <strong>Aceita grupos</strong> e fala inglês/espanhol na recepção.</div>
+        <div class="card-detail"><strong>Aberto:</strong> 1º abril a 31 outubro</div>
+        <div class="card-alert"><svg class="lucide-icon alert-icon" data-lucide="triangle-alert"></svg> <strong>Reserva em andamento por e-mail</strong> — pedido enviado a contact@camping-pradelongue.com pra noite 11→12/07. <em>Em julho com TDF passando por Superbagnères vai estar muito disputado.</em> Horário de recepção: seg-sex 9h-12h e 14h-17h (sáb/dom fechado).</div>
+
+        <div class="alt-list">
+          <div class="alt-list-title">📋 Lista de alternativas em ordem de prioridade</div>
+
+          <div class="alt-item">
+            <div class="alt-item-header">
+              <span class="alt-item-num">A</span>
+              <span class="alt-item-name">Camping Pradelongue ★★★★</span>
+              <span class="alt-item-rating">⭐ 4,5 (443)</span>
+            </div>
+            <div class="alt-item-meta">
+              <strong>Endereço:</strong> 5 Les Tretes, 31110 Moustajon · <strong>Tel:</strong> +33 5 61 79 86 44<br>
+              <strong>Estrutura:</strong> Sanitários novos · piscina aquecida · perfeito pra Superbagnères
+            </div>
+            <div class="alt-item-links">
+              <a href="https://www.camping-pradelongue.com/" target="_blank">↗ Site</a>
+              <a href="https://maps.google.com/?q=Camping+Pradelongue+Moustajon" target="_blank">↗ Maps</a>
+            </div>
+          </div>
+
+          <div class="alt-item">
+            <div class="alt-item-header">
+              <span class="alt-item-num">B</span>
+              <span class="alt-item-name">Camping Chantecler</span>
+              <span class="alt-item-rating">⭐ 4,5 (262)</span>
+            </div>
+            <div class="alt-item-meta">
+              <strong>Endereço:</strong> 49 bis Av. de Vénasque, 31110 Bagnères-de-Luchon · <strong>Tel:</strong> +33 5 61 88 15 33<br>
+              <strong>Horário recepção:</strong> seg-sáb 9h-19h, dom 15h-18h<br>
+              <strong>Estrutura:</strong> Recém-renovado · sanitários muito limpos · snack-bar · próximo ao spa de Luchon · acolhe ciclistas
+            </div>
+            <div class="alt-item-links">
+              <a href="https://maps.google.com/?q=Camping+Chantecler+Luchon" target="_blank">↗ Maps</a>
+            </div>
+          </div>
+
+          <div class="alt-item">
+            <div class="alt-item-header">
+              <span class="alt-item-num">C</span>
+              <span class="alt-item-name">Camping Au Fil de l&#8217;Oô ★★★</span>
+              <span class="alt-item-rating">⭐ 4,4 (552)</span>
+            </div>
+            <div class="alt-item-meta">
+              <strong>Endereço:</strong> 37 Av. de Vénasque, 31110 Bagnères-de-Luchon · <strong>Tel:</strong> +33 5 61 79 30 74<br>
+              <strong>Estrutura:</strong> Sanitários recentes · bar (5h30 da tarde, cerveja e batatas fritas) · vista pras montanhas · 20 min a pé do centro
+            </div>
+            <div class="alt-item-links">
+              <a href="https://maps.google.com/?q=Camping+Au+Fil+de+l+Oo+Luchon" target="_blank">↗ Maps</a>
+            </div>
+          </div>
+
+          <div class="alt-item">
+            <div class="alt-item-header">
+              <span class="alt-item-num">D</span>
+              <span class="alt-item-name">Camping Les Myrtilles</span>
+              <span class="alt-item-rating">⭐ 4,0 (213)</span>
+            </div>
+            <div class="alt-item-meta">
+              <strong>Endereço:</strong> 2 Chem. de la Tribune, 31110 Moustajon (vizinho do Pradelongue) · <strong>Tel:</strong> +33 5 61 79 89 89<br>
+              <strong>Estrutura:</strong> Loja + padaria + vendinha integradas · base pra cols · pitches relativamente apertados
+            </div>
+            <div class="alt-item-links">
+              <a href="https://maps.google.com/?q=Camping+Les+Myrtilles+Moustajon" target="_blank">↗ Maps</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <details class="card-collapsible">
+      <summary>
+        <div class="card-thumb-icon"><svg data-lucide="circle-parking"></svg></div>
+        <div class="card-summary-content">
+          <div class="card-eyebrow">Girona · última noite (12→13/07)</div>
+          <div class="card-title">Parking Vayreda Autocaravanas</div>
+          <div class="card-summary-line">Mesmo da 1ª noite · devolução das bikes + jantar de encerramento</div>
+        </div>
+        <svg class="card-chevron" data-lucide="chevron-down"></svg>
+      </summary>
+      <div class="card-collapsible-body">
+        <div class="card-detail"><strong>Endereço:</strong> Pasaje de Massaguer, 17001 Girona</div>
+        <div class="card-detail"><strong>Reserva:</strong> Obrigatória — telpark.com · 37 vagas</div>
+        <div class="card-detail"><strong>Por quê:</strong> Volta de Luchon pra devolver as 8 bikes (CycleTours + Velodrom) e jantar de encerramento. No dia 13 de manhã segue pra devolução dos motorhomes na McRent Gavà.</div>
+        <div class="card-detail" style="margin-top: 6px; font-size: 12px; color: #666;"><svg class="lucide-icon alert-icon" data-lucide="info"></svg> Mesmo ponto da 1ª noite (06→07). Vale já reservar as duas datas juntas.</div>
+        <div class="card-links">
+          <a href="https://maps.google.com/?q=Pasaje+de+Massaguer,+Girona" class="card-link" target="_blank">↗ Google Maps</a>
+          <a href="https://www.telpark.com/en/cities/girona/vayreda-autocaravanas-car-park/" class="card-link" target="_blank">↗ Reservar</a>
+        </div>
+      </div>
+    </details>
+
+    </div>
+  </div>
+</section>
+
+<!-- SEÇÃO 03 — VOOS & SALAS VIP -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h2 class="section-title">Voos &amp; Salas VIP</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <!-- IDA -->
+    <div class="flight-block">
+      <div class="flight-block-title">Ida — Sexta, 03/07/2026</div>
+      <div class="flight-block-sub">Royal Air Maroc · Reserva ECXMLN · Bilhete AT BKCMXM</div>
+
+      <div class="flight-arrival-tip">
+        <strong><svg class="lucide-icon alert-icon" data-lucide="clock"></svg> Chegar no GRU às 20h30</strong> — 4h antes do voo. Check-in de madrugada lota e somos 8 pessoas com bagagem despachada.
+      </div>
+
+      <div class="flight-leg" style="margin-top: 18px;">
+        <div>
+          <div class="flight-leg-num">Trecho 1</div>
+          <div class="flight-leg-code">AT 0214</div>
+        </div>
+        <div>
+          <div class="flight-route">
+            <span class="flight-airport">GRU</span>
+            <span class="flight-arrow">→</span>
+            <span class="flight-airport">CMN</span>
+            <span class="flight-airport-name">São Paulo · Casablanca</span>
+          </div>
+          <div class="flight-meta">
+            <span><strong>Partida:</strong> 00h30 · Terminal 2</span>
+            <span><strong>Chegada:</strong> 13h25 · Terminal 2</span>
+            <span><strong>Duração:</strong> 8h55</span>
+          </div>
+          <div class="flight-meta" style="margin-top: 4px; font-size: 12px; color: var(--warm-gray);">
+            Boeing 787-9 · Bagagem: 1× 23kg despachada + 1× 10kg de mão
+          </div>
+        </div>
+      </div>
+
+      <div class="flight-layover">
+        <svg class="lucide-icon" data-lucide="coffee"></svg>
+        <span><strong>Escala em Casablanca · 2h40</strong> — chegada T2, próximo voo sai do T1 · trocar de terminal</span>
+      </div>
+
+      <div class="flight-leg">
+        <div>
+          <div class="flight-leg-num">Trecho 2</div>
+          <div class="flight-leg-code">AT 0960</div>
+        </div>
+        <div>
+          <div class="flight-route">
+            <span class="flight-airport">CMN</span>
+            <span class="flight-arrow">→</span>
+            <span class="flight-airport">BCN</span>
+            <span class="flight-airport-name">Casablanca · Barcelona</span>
+          </div>
+          <div class="flight-meta">
+            <span><strong>Partida:</strong> 16h05 · Terminal 1</span>
+            <span><strong>Chegada:</strong> 19h10 · Terminal 1</span>
+            <span><strong>Duração:</strong> 2h05</span>
+          </div>
+          <div class="flight-meta" style="margin-top: 4px; font-size: 12px; color: var(--warm-gray);">
+            Boeing 737-800 · Mesma franquia de bagagem
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- VOLTA -->
+    <div class="flight-block">
+      <div class="flight-block-title">Volta — Terça, 14/07/2026</div>
+      <div class="flight-block-sub">Royal Air Maroc · Reserva ECXMLN · Bilhete AT BKCMXM</div>
+
+      <div class="flight-arrival-tip">
+        <strong><svg class="lucide-icon alert-icon" data-lucide="clock"></svg> Chegar no BCN às 10h45</strong> — 3h antes do voo. Bikes já foram devolvidas no dia 12 e motorhomes no dia 13, então o dia 14 é só check-out do B&B Viladecans (~10 min do aeroporto) e embarque.
+      </div>
+
+      <div class="flight-leg" style="margin-top: 18px;">
+        <div>
+          <div class="flight-leg-num">Trecho 1</div>
+          <div class="flight-leg-code">AT 0965</div>
+        </div>
+        <div>
+          <div class="flight-route">
+            <span class="flight-airport">BCN</span>
+            <span class="flight-arrow">→</span>
+            <span class="flight-airport">CMN</span>
+            <span class="flight-airport-name">Barcelona · Casablanca</span>
+          </div>
+          <div class="flight-meta">
+            <span><strong>Partida:</strong> 13h45 · Terminal 1</span>
+            <span><strong>Chegada:</strong> 15h00 · Terminal 2</span>
+            <span><strong>Duração:</strong> 2h15</span>
+          </div>
+          <div class="flight-meta" style="margin-top: 4px; font-size: 12px; color: var(--warm-gray);">
+            Boeing 737 MAX
+          </div>
+        </div>
+      </div>
+
+      <div class="flight-layover" style="border-left-color: var(--orange2); background: var(--orange1);">
+        <svg class="lucide-icon alert-icon" data-lucide="triangle-alert"></svg>
+        <span><strong>Escala apertada · 1h50</strong> — chega no T2 e próximo voo sai do T1 · trocar de terminal correndo, sem tempo pra sala VIP</span>
+      </div>
+
+      <div class="flight-leg">
+        <div>
+          <div class="flight-leg-num">Trecho 2</div>
+          <div class="flight-leg-code">AT 0215</div>
+        </div>
+        <div>
+          <div class="flight-route">
+            <span class="flight-airport">CMN</span>
+            <span class="flight-arrow">→</span>
+            <span class="flight-airport">GRU</span>
+            <span class="flight-airport-name">Casablanca · São Paulo</span>
+          </div>
+          <div class="flight-meta">
+            <span><strong>Partida:</strong> 16h50 · Terminal 1</span>
+            <span><strong>Chegada:</strong> 22h30 · Terminal 2</span>
+            <span><strong>Duração:</strong> 9h40</span>
+          </div>
+          <div class="flight-meta" style="margin-top: 4px; font-size: 12px; color: var(--warm-gray);">
+            Boeing 787-9
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SALAS VIP -->
+    <h3 style="font-family: 'DM Sans', sans-serif; font-size: 17px; font-weight: 700; color: var(--bark); margin: 32px 0 8px;">Salas VIP disponíveis na rota</h3>
+    <p style="font-family: 'Lora', serif; font-size: 14px; color: var(--warm-gray); margin-bottom: 14px; line-height: 1.55;">Acesso via Visa Infinite, Mastercard Black e Itaú Personnalité — programas Priority Pass, LoungeKey, DragonPass e Visa Airport Companion. <strong><svg class="lucide-icon alert-icon" data-lucide="triangle-alert"></svg> Conferir nos apps antes de cada uso</strong> — quantidade de acessos varia por emissor.</p>
+
+    <div class="vip-grid">
+      <div class="vip-card">
+        <div class="vip-airport"><svg class="lucide-icon" data-lucide="plane-takeoff"></svg> GRU · Terminal 2 · Saída internacional</div>
+        <div class="vip-name">The Lounge GRU Internacional</div>
+        <div class="vip-detail">Em parceria com SkyTeam. Refeições à la carte, bar com bebidas alcoólicas, chuveiros, espaço zen.</div>
+        <div class="vip-detail" style="margin-top: 6px;"><strong>Quando:</strong> antes do AT 0214 (madrugada 03/07)</div>
+        <span class="vip-access">Priority Pass</span>
+        <span class="vip-access">LoungeKey</span>
+        <div class="vip-detail" style="margin-top: 8px; font-size: 12px; color: var(--warm-gray);"><svg class="lucide-icon alert-icon" data-lucide="triangle-alert"></svg> Confirmar terminal de saída do RAM no check-in — pode ter migrado pro T3</div>
+      </div>
+
+      <div class="vip-card">
+        <div class="vip-airport"><svg class="lucide-icon" data-lucide="coffee"></svg> CMN · Terminal 1 · Escala da ida</div>
+        <div class="vip-name">Pearl Lounge T1</div>
+        <div class="vip-detail">Refeições, bebidas, WiFi, áreas de descanso. Bom uso da escala de 2h40 já no terminal do próximo voo (após trocar de T2 pra T1).</div>
+        <div class="vip-detail" style="margin-top: 6px;"><strong>Quando:</strong> entre 14h e 15h45 do dia 03/07</div>
+        <span class="vip-access">Priority Pass</span>
+        <span class="vip-access">LoungeKey</span>
+      </div>
+
+      <div class="vip-card">
+        <div class="vip-airport"><svg class="lucide-icon" data-lucide="plane-landing"></svg> BCN · Terminal 1 · Saída internacional</div>
+        <div class="vip-name">Sala VIP Joan Miró</div>
+        <div class="vip-detail">Lounge non-Schengen no Nível 2, depois do controle de passaportes, próximo ao Gate D. Para voos intercontinentais.</div>
+        <div class="vip-detail" style="margin-top: 6px;"><strong>Quando:</strong> antes do AT 0965 (volta dia 14/07)</div>
+        <span class="vip-access">Priority Pass</span>
+        <span class="vip-access">LoungeKey</span>
+        <span class="vip-access">DragonPass</span>
+      </div>
+
+      <div class="vip-card" style="opacity: 0.65;">
+        <div class="vip-airport"><svg class="lucide-icon alert-icon" data-lucide="triangle-alert"></svg> CMN · Terminal 1 · Escala da volta</div>
+        <div class="vip-name">Pearl Lounge T1 — provavelmente sem tempo</div>
+        <div class="vip-detail">Escala de 1h50 com troca de terminal não dá margem. Foco em pegar a conexão direto.</div>
+        <div class="vip-detail" style="margin-top: 6px; font-size: 12px; color: var(--warm-gray);">Se o voo BCN→CMN adiantar, é Plano B.</div>
+      </div>
+    </div>
+
+    <div style="margin-top: 18px; padding: 14px 18px; background: var(--sand); border-radius: 10px; font-family: 'Lora', serif; font-size: 13px; color: var(--bark); line-height: 1.6;">
+      <strong style="color: var(--moss);">Dica prática:</strong> baixar os apps Priority Pass / LoungeKey / Visa Airport Companion com antecedência e fazer login. Em CMN o WiFi pode ser instável — ter o QR code da entrada offline ajuda. Confirmar nas regras de cada cartão quantos acessos por ano e quantos acompanhantes cada um leva (geralmente 1 grátis + R$ 30–60 por adicional).
+    </div>
+
+  </div>
+</section>
+
+<!-- SEÇÃO 04 — ROTEIRO -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <h2 class="section-title">Roteiro Dia a Dia</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div style="margin-bottom: 28px; padding: 16px 18px; background: rgba(135, 119, 87, 0.08); border-radius: 12px; font-family: 'Lora', serif; font-size: 14px; line-height: 1.6; color: var(--bark);">
+      <div style="font-family: 'DM Sans', sans-serif; font-weight: 600; font-size: 14px; color: var(--bark); margin-bottom: 10px;">🚖 Guia rápido — transporte por aplicativo em Barcelona (grupo de 8)</div>
+      <div style="margin-bottom: 8px;"><strong>Apps:</strong> baixar 2-3 antes da viagem — <strong>FreeNow</strong> (táxis oficiais, mais oferta), <strong>Uber</strong> (familiar, preço fixo), <strong>Bolt</strong> (geralmente mais barato). Comparar preços antes de cada corrida — diferenças de €5-15 entre apps são comuns. Todos aceitam cartão internacional.</div>
+      <div style="margin-bottom: 8px;"><strong>Capacidade:</strong> carro normal (UberX/Cabify/FreeNow) leva <strong>até 4 passageiros</strong>. Van/XL (UberXL/Uber Van/Cabify Group) leva <strong>até 6</strong>. Pra grupo de 8: <strong>2 carros normais (4+4)</strong> ou <strong>2 vans XL (mais confortável com mochilas)</strong>.</div>
+      <div style="margin-bottom: 8px;"><strong>Tarifas aproximadas:</strong> ~€1,20-1,50/km (normal), €3,50/km (XL nos primeiros 20 km). Taxa mínima ~€5,50. Trajetos curtos no centro: 2 carros normais €15-25 · 2 vans XL €25-35.</div>
+      <div><strong>Quando vale a pena vs metrô:</strong> com bagagem pesada (chegada/saída), tarde da noite, prazo apertado, ou em rotas curtas e diretas onde 2 carros saem mais barato que 8 bilhetes de metrô. Pra trajetos urbanos médios com tempo de sobra, a <strong>Hola BCN 48h (€18,70/pessoa)</strong> ou o <strong>T-Casual 10 viagens (€12,15/pessoa)</strong> ainda são geralmente os mais econômicos.</div>
+    </div>
+
+    <div class="timeline">
+
+
+    <!-- 03/07 -->
+    <div class="day-card">
+<div class="day-card-inner">
+      <div class="day-date">
+        <div>
+          <div class="day-date-num">03</div>
+          <div class="day-date-month">Julho</div>
+          <div class="day-date-week">Quinta</div>
+        </div>
+        <span class="day-badge badge-travel">Chegada</span>
+      </div>
+      <div class="day-body-col">
+<div class="day-body-header">
+<div class="day-title">Barcelona — Chegada</div>
+        <div class="day-location">🇪🇸 Barcelona</div>
+</div>
+<div class="day-body-content">
+<table class="schedule">
+          <tr><td class="time-col">19h10</td><td class="event-col">Pouso em Barcelona (GRU → BCN)</td></tr>
+          <tr><td class="time-col">20h00</td><td class="event-col">Desembarque + bagagens</td></tr>
+          <tr><td class="time-col">20h30</td><td class="event-col"><strong>2 Ubers/Cabify XL</strong> do aeroporto aos hotéis — mais prático que metrô com bagagem (~€35-50 total por carro)</td></tr>
+          <tr><td class="time-col">~21h15</td><td class="event-col">Chegada nos dois hotéis: <strong>ByPillow House</strong> (Rubió i Ors, Horta-Guinardó) e <strong>Sant Jordi Sagrada Família</strong> (Freser)</td></tr>
+          <tr><td class="time-col">~21h45</td><td class="event-col">Check-in nos dois hotéis</td></tr>
+          <tr><td class="time-col">22h30</td><td class="event-col">Jantar próximo aos hotéis</td></tr>
+        </table>
+        <div class="day-note">Os dois hotéis ficam próximos (~1,5 km de distância um do outro) na <strong>L5 (azul)</strong>: ByPillow em Maragall, Sant Jordi em Sant Pau–Dos de Maig — a 4 estações de metrô uma da outra. Pra deslocamento sem bagagem entre os dois durante os dias seguintes, é só pegar a L5 ou caminhar 20 min.</div>
+      
+</div>
+</div></div>
+</div>    <!-- 04/07 -->
+    <div class="day-card">
+<div class="day-card-inner">
+      <div class="day-date">
+        <div>
+          <div class="day-date-num">04</div>
+          <div class="day-date-month">Julho</div>
+          <div class="day-date-week">Sábado</div>
+        </div>
+        <span class="day-badge badge-tdf">Etapa 1 ⭐</span>
+      </div>
+      <div class="day-body-col">
+<img decoding="async" class="day-photo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Barcelona_-_Parc_del_F%C3%B2rum_02.jpg/1280px-Barcelona_-_Parc_del_F%C3%B2rum_02.jpg" alt="Parc del Fòrum em Barcelona com a esplanada e edifícios modernos" loading="lazy">
+<div class="day-body-header">
+<div class="day-title">Grand Départ — TTT Barcelona</div>
+        <div class="day-location">🇪🇸 Parc del Fòrum → Passeig Marítim → Sagrada Família → Montjuïc</div>
+</div>
+<div class="day-body-content">
+
+        <div class="day-alert" style="margin: 14px 0;">
+          <strong>Circuito — 19,7 km TTT (rota oficial atualizada 26/02/2026):</strong> Parc del Fòrum (largada) → Av. Litoral → Port Olímpic (ida-volta na orla) → Bac de Roda → Llull → Josep Pla → Rambla de Guipúscoa → Carrer d&#8217;Aragó → <strong>Sagrada Família</strong> → Mallorca → Lepant → Passeig de Gràcia → Tarragona → <strong>Plaça d&#8217;Espanya</strong> → Av. Reina Maria Cristina → <strong>Côte de Montjuïc</strong> (1,1 km a 5,1%) → Estadi Olímpic → Carrer dels Jocs del 92 → Carrer del Foc → <strong>Côte du Stade Olympique</strong> (1,1 km a 5,1%, lado sul) → Linha de chegada (Estadi Olímpic Lluís Companys)
+        </div>
+
+        <div class="day-alert" style="margin: 14px 0; background: #fee; border-left-color: #c44;">
+          <strong>⚠️ INFO OFICIAL DA AJUNTAMENT BARCELONA — restrições do dia 04/07:</strong><br>
+          • <strong>13h30:</strong> Circuito TOTALMENTE FECHADO ao trânsito (com barreiras físicas em todo o trajeto)<br>
+          • <strong>16h-19h30:</strong> Faixa de MAIOR restrição (caravana publicitária + corrida)<br>
+          • <strong>17h05:</strong> Largada oficial (primeira equipe). Largadas escalonadas a cada 5 min<br>
+          • <strong>~17h10:</strong> 1ª equipe deve cruzar a linha de chegada em Montjuïc<br>
+          • <strong>~19h15:</strong> Última equipe chega (algumas mais tarde)<br>
+          • <strong>20h30:</strong> Trânsito volta progressivamente<br>
+          • <strong>Multidão esperada:</strong> 650.000 a 850.000 pessoas em Barcelona neste dia<br>
+          • Ônibus 150 (que sobe Montjuïc) ESTÁ SUSPENSO entre 16h-19h30. <strong>Metrô + Funicular de Montjuïc são as opções viáveis.</strong>
+        </div>
+
+        <table class="schedule">
+          <tr><td class="time-col">08h00</td><td class="event-col">Café da manhã no hostel</td></tr>
+          <tr><td class="time-col">09h00</td><td class="event-col"><strong>Saída a pé do hostel</strong> — passeio turístico pelo centro de Barcelona</td></tr>
+          <tr><td class="time-col"></td><td class="event-col" style="color: #666; font-size: 13px; padding-top: 0;">↳ Sagrada Família → Casa Milà → Casa Batlló → <strong>Plaça Catalunya</strong> (parada na <strong>Official Store do Tour de France</strong> para compras) → Catedral de Barcelona → bairro Gòtic → La Boqueria → Palácio Güell → Rambla de Mar</td></tr>
+          <tr><td class="time-col">~12h30</td><td class="event-col">Almoço na <strong>Barceloneta</strong> (último momento &#8220;tranquilo&#8221; antes da multidão se concentrar)</td></tr>
+          <tr><td class="time-col">~13h45</td><td class="event-col"><strong>Opcional (ver largada):</strong> Metrô L4 amarela direto de Barceloneta até <em>El Maresme | Fòrum</em> (~15 min) — visitar a <strong>Vila do Tour</strong> no Parc del Fòrum (zona de fãs, palco, atividades, equipes treinando)</td></tr>
+          <tr><td class="time-col">~14h30</td><td class="event-col">Continuar pela orla até voltar a Barceloneta, ou ir direto pra Montjuïc</td></tr>
+          <tr><td class="time-col">~14h45</td><td class="event-col"><strong>Metrô até Paral·lel</strong>: de Barceloneta L4 → Verdaguer → L5 → Diagonal → L3 verde → Paral·lel (~20 min · serviço reforçado 40% nesse dia)</td></tr>
+          <tr><td class="time-col">~15h05</td><td class="event-col"><strong>Funicular de Montjuïc</strong> ⭐ — sobe direto de Paral·lel até Av. Miramar/Parc de Montjuïc. <em>Funciona com o mesmo bilhete da Hola BCN, sem fila extra</em></td></tr>
+          <tr><td class="time-col">~15h10</td><td class="event-col">Chegada em <strong>Parc de Montjuïc</strong> (parte alta) — caminhada descendo pelos Jardins até o Estadi (~15-20 min, vistas espetaculares)</td></tr>
+          <tr><td class="time-col">~15h30</td><td class="event-col">Posicionados na área do <strong>Estadi Olímpic Lluís Companys</strong> — 1h30-2h de antecedência pra escolher bom lugar (multidão massiva esperada)</td></tr>
+          <tr><td class="time-col">17h05</td><td class="event-col"><em><svg class="lucide-icon" data-lucide="flag"></svg> 1ª equipe larga no Fòrum</em> — telões transmitem a corrida em tempo real</td></tr>
+          <tr><td class="time-col">~17h10</td><td class="event-col"><em><svg class="lucide-icon" data-lucide="flag"></svg> 1ª equipe chega em Montjuïc</em> — chegadas escalonadas a cada 5 min</td></tr>
+          <tr><td class="time-col">~19h15</td><td class="event-col">Última equipe cruza a linha · Premiação · primeiro yellow jersey</td></tr>
+          <tr><td class="time-col">~19h45</td><td class="event-col"><strong>Descida de Montjuïc</strong> · Opções: (1) caminhar até Pl. Espanya (~20 min), (2) voltar pelo Funicular → Paral·lel, ou (3) Metrô L3 em Espanya</td></tr>
+          <tr><td class="time-col">~20h30</td><td class="event-col">Chegada ao <strong>Passeig de Sant Joan</strong> — jantar (a região é famosa pelos bares e restaurantes ao longo da alameda arborizada)</td></tr>
+          <tr><td class="time-col">~22h30</td><td class="event-col">Volta <strong>a pé</strong> ao hostel — ~20 min de caminhada por Sant Martí</td></tr>
+        </table>
+
+        <div class="day-note">
+          <strong>🎫 Bilhete único de transporte — Hola BCN Travel Card 48h:</strong> <strong>€18,70/pessoa</strong> (com 10% off comprando online no site oficial TMB) — viagens ilimitadas em metrô, ônibus TMB, Funicular de Montjuïc, tram, FGC e Rodalies (Zona 1) por 48 horas consecutivas. Cobre o dia 04 + dia 05 inteiro com folga. Não cobre o Teleférico de Montjuïc nem o Aerobus. <strong>Compra:</strong> <a href="https://www.holabarcelona.com/tickets/hola-bcn-barcelona-travel-card" target="_blank" style="color: var(--moss); text-decoration: underline;">holabarcelona.com/tickets/hola-bcn-barcelona-travel-card</a> · ativar pela primeira vez no início do dia 04 (manhã) — assim cobre todos os trajetos do TDF e da Etapa 2 no domingo.<br><br>
+          <strong>🚇 Mais info útil de transporte no dia:</strong> A TMB reforça serviço em 40% nas linhas L1 e L5. As estações de metrô viram pontos oficiais de travessia do circuito (vão ter funcionários de apoio). Plano B caso o Funicular esteja com problema: Metrô L1/L3 até <em>Espanya</em> e subir a pé pelas escadarias do MNAC e depois pelos jardins de Joan Brossa até o Estadi (~25 min subindo). Bus 150 só volta após 19h30, então não é opção pra subir.<br><br>
+          <strong>🚧 Áreas oficiais de travessia do circuito:</strong> 54 pontos de passagem para pedestres distribuídos ao longo de toda a rota, máximo de 5 min a pé entre eles. Travessia elevada em Carrer de Mallorca e Avenue de l&#8217;Estadi.
+        </div>
+        </div>
+</div></div>
+    </div>
+</div>    <!-- 05/07 -->
+    <div class="day-card">
+<div class="day-card-inner">
+      <div class="day-date">
+        <div>
+          <div class="day-date-num">05</div>
+          <div class="day-date-month">Julho</div>
+          <div class="day-date-week">Domingo</div>
+        </div>
+        <span class="day-badge badge-tdf">Etapa 2 ⭐</span>
+      </div>
+      <div class="day-body-col">
+<img decoding="async" class="day-photo" src="img/1280px-Montju-C3-AFc-Cable-Car-BCN-04-2016-7109.jpg" alt="Telefèric de Montjuïc com vista de Barcelona ao fundo" loading="lazy">
+<div class="day-body-header">
+<div class="day-title">Etapa 2 — Tarragona → Barcelona</div>
+        <div class="day-location">🇪🇸 Costa Daurada → Collblanc → Montjuïc (2 voltas no circuito)</div>
+</div>
+<div class="day-body-content">
+
+        <div class="day-alert" style="margin: 14px 0;">
+          <strong>Circuito final — 2 voltas no Montjuïc:</strong> entrada por Collblanc/Sants → Plaça Espanya → Av. Reina Maria Cristina → Av. Rius i Taulet → Passeig de Montjuïc → Carretera de Montjuïc → <strong>Castell de Montjuïc</strong> (1,6 km ao 9,3%, máx. 13%) → descida → <strong>Estadi Olímpic</strong> (600 m ao 7%, chegada). Cada volta tem 2 subidas significativas — então o pelotão sobe ao Castell várias vezes antes da chegada final.<br><br>
+          <strong>Largada:</strong> 13h05 em Tarragona · <strong>Caravana publicitária chega Barcelona:</strong> ~15h25 (~2h antes do pelotão) · <strong>Pelotão entra Barcelona:</strong> ~16h26 · <strong>Chegada estimada:</strong> ~17h35 em Montjuïc
+        </div>
+
+        <div class="day-alert" style="margin: 14px 0; background: #fee; border-left-color: #c44;">
+          <strong>⚠️ INFO OFICIAL DA AJUNTAMENT BARCELONA — restrições do dia 05/07:</strong><br>
+          • <strong>12h00:</strong> Início das restrições<br>
+          • <strong>13h30:</strong> Circuito TOTALMENTE FECHADO ao trânsito (com barreiras físicas)<br>
+          • <strong>15h45-17h45:</strong> <strong>Fase crítica — Montjuïc &#8220;praticamente isolada&#8221;</strong>, cruzamentos com checkpoint controlado<br>
+          • <strong>~16h26:</strong> Pelotão entra Barcelona via Collblanc<br>
+          • <strong>~17h35:</strong> Chegada do pelotão no Estadi Olímpic<br>
+          • <strong>18h00:</strong> Trânsito volta progressivamente<br>
+          • <strong>Ônibus 150 e linhas que servem Montjuïc SUSPENSAS</strong> durante toda a passagem dos ciclistas<br>
+          • <strong>Travessia elevada Av. de l&#8217;Estadi</strong> (do dia anterior) mantida · <strong>escadarias da Av. Reina Maria Cristina</strong> servem como travessia<br>
+          • Estações de metrô viram pontos oficiais de travessia · TMB reforça serviço em 40% nas L1 e L5
+        </div>
+
+        <table class="schedule">
+          <tr><td class="time-col">08h00</td><td class="event-col">Café da manhã no hostel</td></tr>
+          <tr><td class="time-col">09h00</td><td class="event-col"><strong>Saída do hostel rumo ao Park Güell</strong> — <strong>2 carros de aplicativo</strong> (Uber/Cabify/FreeNow, ~€15-20 total ÷ 8) levam direto à entrada em ~15 min. <em>Alternativa de metrô: L4 → L3 até Vallcarca + 10 min de subida a pé</em></td></tr>
+          <tr><td class="time-col">~09h20</td><td class="event-col">Chegada ao <strong>Park Güell</strong> · Carrer d&#8217;Olot, Gràcia · Volta pelo parque, vista panorâmica, mosaicos de Gaudí · <em>Importante: comprar bilhete online com antecedência (zona monumental)</em></td></tr>
+          <tr><td class="time-col">~11h00</td><td class="event-col"><strong>Bus V19</strong> (ou 196) da região do Park Güell até a região do Tibidabo · ~25-30 min · descer próximo a Av. Tibidabo</td></tr>
+          <tr><td class="time-col">~11h30</td><td class="event-col">Chegada à <strong>Plaça del Doctor Andreu / Mirablau</strong> · Vista linda da cidade do mirante antes de subir</td></tr>
+          <tr><td class="time-col">~11h45</td><td class="event-col"><strong>Funicular Cuca de Llum</strong> até o topo do Tibidabo · €7,70 ida-e-volta · 4 min de subida, 272 m de desnível</td></tr>
+          <tr><td class="time-col">~12h00</td><td class="event-col">Topo do <strong>Tibidabo</strong> — Templo do Sagrat Cor (mirante no terraço), vista 360° da cidade, parque de diversões vintage</td></tr>
+          <tr><td class="time-col">~13h00</td><td class="event-col">Almoço no topo (restaurante do Sagrat Cor) — encerrar até 13h45 pra não atrasar</td></tr>
+          <tr><td class="time-col">~13h45</td><td class="event-col">Descer de funicular Cuca de Llum até <strong>Plaça del Doctor Andreu</strong></td></tr>
+          <tr><td class="time-col">~14h00</td><td class="event-col"><strong>Bus 196</strong> descendo Av. Tibidabo até <strong>FGC Av. Tibidabo</strong> (5 min) — ou caminhar (~12 min)</td></tr>
+          <tr><td class="time-col">~14h15</td><td class="event-col"><strong>FGC L7</strong> (Av. Tibidabo → Plaça Catalunya) — 7 estações, ~12 min</td></tr>
+          <tr><td class="time-col">~14h30</td><td class="event-col">Chegada em Pl. Catalunya · baldeação interna pra <strong>Metrô L3 verde</strong> (~5 min de caminhada)</td></tr>
+          <tr><td class="time-col">~14h40</td><td class="event-col"><strong>Metrô L3</strong> sentido Zona Universitària: Catalunya → Liceu → Drassanes → <strong>Paral·lel</strong> (4 estações, ~7 min)</td></tr>
+          <tr><td class="time-col">~14h50</td><td class="event-col">Caminhada interna em Paral·lel até a plataforma do <strong>Funicular de Montjuïc</strong> (~3 min · sinalizado)</td></tr>
+          <tr><td class="time-col">~14h55</td><td class="event-col"><strong>Funicular de Montjuïc</strong> ⭐ — mesma estratégia do dia 04 · sobe direto até <strong>Av. Miramar/Parc de Montjuïc</strong> em 2 min · coberto pela Hola BCN</td></tr>
+          <tr><td class="time-col">~15h00</td><td class="event-col">Chegada em <strong>Parc de Montjuïc</strong> (parte alta) — caminhada descendo pelos Jardins até o circuito (~15-20 min · vistas espetaculares)</td></tr>
+          <tr><td class="time-col">~15h20</td><td class="event-col"><strong>Posicionados no circuito</strong> — escolher entre rampa do Castell (mais cinematográfico, 13%) ou perto do Estadi Olímpic (ver chegada) · <em>ANTES das 15h45 quando Montjuïc fica &#8220;praticamente isolada&#8221;</em></td></tr>
+          <tr><td class="time-col">~16h26</td><td class="event-col"><em><svg class="lucide-icon" data-lucide="flag"></svg> Pelotão entra Barcelona</em> via Collblanc — telões transmitem em tempo real</td></tr>
+          <tr><td class="time-col">~16h45</td><td class="event-col">Pelotão entra no <strong>circuito de Montjuïc — 1ª passagem</strong> · grupo ainda compacto</td></tr>
+          <tr><td class="time-col">~17h15</td><td class="event-col">Pelotão na <strong>2ª passagem (penúltima)</strong> · ataques começam, especialmente na rampa do Castell (1,6 km a 9,3%)</td></tr>
+          <tr><td class="time-col">~17h35</td><td class="event-col"><em><svg class="lucide-icon" data-lucide="flag"></svg> Chegada — Passeig Olímpic, Estadi Lluís Companys</em> · 2ª camisa amarela em jogo · Premiação</td></tr>
+          <tr><td class="time-col">~18h30</td><td class="event-col">Descida de Montjuïc · Opções: (1) caminhar até Pl. Espanya (~20 min, bus 150 retomado após 18h), (2) voltar pelo Funicular de Montjuïc → Paral·lel, ou (3) escadarias da Av. Reina Maria Cristina</td></tr>
+          <tr><td class="time-col">~19h30</td><td class="event-col">Chegada ao <strong>Passeig de Sant Joan</strong> — jantar na alameda arborizada (cheia de bares e restaurantes)</td></tr>
+          <tr><td class="time-col">~22h30</td><td class="event-col">Volta <strong>a pé</strong> ao hostel — ~20 min por Sant Martí</td></tr>
+        </table>
+
+        <div class="day-note">
+          <strong>⚠️ Park Güell:</strong> a zona monumental (a parte das colunas e mosaicos) <strong>exige bilhete com hora marcada</strong> — comprar online no site oficial (parkguell.barcelona) alguns dias antes. ~€10 por pessoa.<br><br>
+          <strong>⚠️ Janela apertada com a fase crítica:</strong> Montjuïc fica &#8220;praticamente isolada&#8221; entre 15h45-17h45. <strong>Vocês precisam estar posicionados no circuito até 15h45.</strong> Chegando ~15h20 no ponto escolhido, têm ~25 min de margem antes do bloqueio. Se atrasarem o almoço no Tibidabo, podem ficar do lado errado do circuito.<br><br>
+          <strong>📍 Onde se posicionar:</strong> a rampa do Castell (1,6 km a 9,3%, com seção a 13%) é o ponto mais cinematográfico — vocês veem os ataques dos GC contenders 3 vezes. Como alternativa, perto da linha de chegada no Estadi tem a explosão final. Os dois ficam na &#8220;parte alta&#8221; de Montjuïc, perto de onde o Funicular descarrega. Levar protetor solar, água e algo pra comer (impossível sair pra comprar depois das 15h45).<br><br>
+          <strong>🎫 Bilhete de transporte:</strong> a mesma <strong>Hola BCN Travel Card 48h</strong> ativada no sábado de manhã cobre todo o domingo (TMB, Funicular de Montjuïc, FGC do Tibidabo). O funicular do Tibidabo (Cuca de Llum, €7,70) e o Teleférico de Montjuïc são à parte.
+        </div>
+</div></div>
+    </div>
+</div>
+<!-- 06/07 -->
+    <div class="day-card">
+<div class="day-card-inner">
+      <div class="day-date">
+        <div>
+          <div class="day-date-num">06</div>
+          <div class="day-date-month">Julho</div>
+          <div class="day-date-week">Segunda</div>
+        </div>
+        <span class="day-badge badge-travel">Transfer</span>
+      </div>
+      <div class="day-body-col">
+<div class="day-body-header">
+<div class="day-title">Barcelona → Girona</div>
+        <div class="day-location">🇪🇸 Barcelona → Girona</div>
+</div>
+<div class="day-body-content">
+<table class="schedule">
+          <tr><td class="time-col">07h00</td><td class="event-col">Café da manhã nos hotéis · arrumar malas</td></tr>
+          <tr><td class="time-col">08h00</td><td class="event-col"><strong>Check-out</strong> dos dois hotéis · <strong>solicitar guarda-volumes</strong> pra deixar as malas (prática comum em hostels, mas confirmar na chegada)</td></tr>
+          <tr><td class="time-col">~08h15</td><td class="event-col">Deslocamento à <strong>Decathlon Gràcia</strong> (Carrer Gran de Gràcia, 54) · do hostel Sant Jordi: 20 min a pé OU metrô L5 (Sagrada Família → Diagonal, 4 paradas) + 8 min a pé · do ByPillow: ~25 min de metrô</td></tr>
+          <tr><td class="time-col">09h00</td><td class="event-col"><strong>Decathlon Gràcia abre</strong> · compras rápidas (caramanhola, óculos, meias, itens que esqueceram, etc.)</td></tr>
+          <tr><td class="time-col">~10h15</td><td class="event-col">Voltar aos hotéis · pegar as malas</td></tr>
+          <tr><td class="time-col">~10h45</td><td class="event-col"><strong>2 Ubers/Cabify XL</strong> dos hotéis à <strong>McRent Gavà</strong> (Carrer de la Forja, 13) — ~25-30 min</td></tr>
+          <tr><td class="time-col">~11h30</td><td class="event-col">Chegada à McRent Gavà</td></tr>
+          <tr><td class="time-col">12h15</td><td class="event-col"><strong>Retirada dos 2 motorhomes</strong> — McRent Gavà (Carrer de la Forja, 13) <svg class="lucide-icon confirmed-icon" data-lucide="circle-check"></svg></td></tr>
+          <tr><td class="time-col">13h15</td><td class="event-col">Saída para Girona (~1h30, 114 km)</td></tr>
+          <tr><td class="time-col">~14h45</td><td class="event-col">Chegada em Girona — <strong>seguir direto para as lojas</strong> (não ao camping ainda)</td></tr>
+          <tr><td class="time-col">~15h15</td><td class="event-col"><strong>CycleTours Catalonia</strong> — retirar as 3 bikes (Carrer de Santa Eugènia, 11)</td></tr>
+          <tr><td class="time-col">~16h00</td><td class="event-col"><strong>Velodrom Girona</strong> — retirar as 5 bikes + resolver o crédito da GALFER na loja/café (Pujada de Sant Domènec, fecha 20h30)</td></tr>
+          <tr><td class="time-col">~17h30</td><td class="event-col"><strong>Compras de roupa e equipamento</strong> — centro histórico (Twenty One, Rocacorba) e/ou Biking Point. Ver seção 06 com o mapa das lojas</td></tr>
+          <tr><td class="time-col">~19h30</td><td class="event-col">Seguir ao <strong>Camper Area Vayreda</strong> — estacionar e organizar os motorhomes para a 1ª noite</td></tr>
+          <tr><td class="time-col">21h00</td><td class="event-col">Jantar em Girona</td></tr>
+        </table>
+        <div class="day-alert"><strong><svg class="lucide-icon confirmed-icon" data-lucide="circle-check"></svg> MCRent confirmou retirada às 12h15</strong> — chegando em Girona ~14h45, dá tempo de sobra pra resolver as bikes com calma nas duas lojas e ainda passar pelo centro histórico antes de tudo fechar. Velodrom fecha 20h30 e as lojas do centro até 20h. Só depois estacionar no camping e sair pra jantar.<br><br><strong><svg class="lucide-icon" data-lucide="shopping-bag"></svg> Decathlon Gràcia:</strong> Carrer Gran de Gràcia, 54 · ⭐ 4,2 (5.219 avals) · 1,58 km da Sagrada Família · abre 9h segunda · Tel +34 936 61 87 93. Compras rápidas só (items esquecidos / equipamento de última hora).<br><br><strong><svg class="lucide-icon" data-lucide="car"></svg> Trajeto à McRent Gavà:</strong> 2 Ubers/Cabify XL dos hotéis à McRent Gavà (~25-30 min, €35-50 cada). Fica em Gavà, não dentro do aeroporto — não confundir. Endereço exato: Carrer de la Forja, 13, 08850 Gavà.</div>
+</div>
+</div></div>
+    </div>
+</div>    <!-- 07/07 -->
+    <div class="day-card">
+<div class="day-card-inner">
+      <div class="day-date">
+        <div>
+          <div class="day-date-num">07</div>
+          <div class="day-date-month">Julho</div>
+          <div class="day-date-week">Terça</div>
+        </div>
+        <span class="day-badge badge-bike">Pedal + Transfer</span>
+      </div>
+      <div class="day-body-col">
+<img decoding="async" class="day-photo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Girona_des_de_l_aire_edited.jpg/1280px-Girona_des_de_l_aire_edited.jpg" alt="Vista aérea de Girona com a catedral e o rio Onyar" loading="lazy">
+<div class="day-body-header">
+<div class="day-title">Girona → Santa Cristina d&#8217;Aro → Pirineus</div>
+        <div class="day-location">🇪🇸 Girona → Lourdes</div>
+</div>
+<div class="day-body-content">
+<table class="schedule">
+          <tr><td class="time-col">06h30</td><td class="event-col">Acordar, café rápido — todas as 8 bikes já em mãos desde ontem</td></tr>
+          <tr><td class="time-col">08h00</td><td class="event-col">Largada do pedal</td></tr>
+          <tr><td class="time-col">~12h00</td><td class="event-col">Retorno a Girona</td></tr>
+          <tr><td class="time-col">12h30</td><td class="event-col">Almoço no centro</td></tr>
+          <tr><td class="time-col">~14h00</td><td class="event-col"><strong>Tarde livre em Girona</strong> — bater perna, visitar mais lojas de ciclismo (ver seção 06)</td></tr>
+          <tr><td class="time-col">15h30</td><td class="event-col">Banho e guardar as bikes nos motorhomes</td></tr>
+          <tr><td class="time-col">16h30</td><td class="event-col"><strong>Saída dos motorhomes para Lourdes</strong> (~4h54, 465 km)</td></tr>
+          <tr><td class="time-col">~21h30</td><td class="event-col">Chegada em Lourdes — Camping em Lourdes (ver lista de alternativas na seção 02)</td></tr>
+          <tr><td class="time-col">~22h00</td><td class="event-col">Jantar em Lourdes</td></tr>
+        </table>
+        <div class="ride-stats">
+          <div class="ride-stat"><div class="ride-stat-value">87.9</div><div class="ride-stat-label">km
+</div>
+</div></div>
+          <div class="ride-stat-divider"></div>
+          <div class="ride-stat"><div class="ride-stat-value">1.250</div><div class="ride-stat-label">m D+</div></div>
+          <div class="ride-stat-divider"></div>
+          <div class="ride-stat"><div class="ride-stat-value">~4h</div><div class="ride-stat-label">em sela</div></div>
+        </div>
+        <div style="margin-top: 8px;">
+          <span class="route-tag">Velodrom Girona <span class="route-arrow">→</span> Els Àngels <span class="route-arrow">→</span> La Bisbal d&#8217;Empordà <span class="route-arrow">→</span> Santa Cristina d&#8217;Aro <span class="route-arrow">→</span> Girona</span>
+        <div style="margin-top: 12px;"><a href="https://www.komoot.com/tour/2959567642" class="komoot-inline" target="_blank" ><svg class="lucide-icon" data-lucide="map"></svg> Ver rota completa no Komoot — 87.9 km · 1.250 m D+</a></div>
+        </div>
+        <div class="day-note">Pedal de manhã + tarde livre pra aproveitar as lojas de Girona, depois transfer de ~5h pra Lourdes. Chegada e jantar já tarde (~22h), então vale comprar algo pro caminho.</div>
+      </div>
+    </div>
+</div>    <!-- 08/07 -->
+    <div class="day-card">
+<div class="day-card-inner">
+      <div class="day-date">
+        <div>
+          <div class="day-date-num">08</div>
+          <div class="day-date-month">Julho</div>
+          <div class="day-date-week">Quarta</div>
+        </div>
+        <span class="day-badge badge-tdf">Pedal + Etapa 5 ⭐</span>
+      </div>
+      <div class="day-body-col">
+<img decoding="async" class="day-photo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Peloton_of_Tour_f%C3%A9minin_international_des_Pyr%C3%A9n%C3%A9es_2023_in_Hautacam_climb.jpg/1280px-Peloton_of_Tour_f%C3%A9minin_international_des_Pyr%C3%A9n%C3%A9es_2023_in_Hautacam_climb.jpg" alt="Pelotão do Tour féminin subindo o Hautacam" loading="lazy">
+<div class="day-body-header">
+<div class="day-title">Hautacam + Chegada Etapa 5 em Pau → Tourmalet</div>
+        <div class="day-location">🇫🇷 Lourdes → Hautacam → Pau → Tourmalet (pernoite)</div>
+</div>
+<div class="day-body-content">
+<table class="schedule">
+          <tr><td class="time-col">06h30</td><td class="event-col">Acordar, café da manhã</td></tr>
+          <tr><td class="time-col">07h30</td><td class="event-col">Saída de Lourdes de bike</td></tr>
+          <tr><td class="time-col">~11h00</td><td class="event-col">Retorno a Lourdes</td></tr>
+          <tr><td class="time-col">11h30</td><td class="event-col">Banho rápido, almoço leve, guardar bikes</td></tr>
+          <tr><td class="time-col">12h30</td><td class="event-col">Saída dos motorhomes para Pau (~45 min)</td></tr>
+          <tr><td class="time-col">13h30</td><td class="event-col">Chegada em Pau — posicionar na Place de Verdun</td></tr>
+          <tr><td class="time-col">14h15</td><td class="event-col">Largada oficial da Etapa 5 em Lannemezan</td></tr>
+          <tr><td class="time-col">16h15</td><td class="event-col">Caravana publicitária chega em Pau</td></tr>
+          <tr><td class="time-col">17h37–55</td><td class="event-col"><em><svg class="lucide-icon" data-lucide="flag"></svg> Chegada do pelotão — Place de Verdun (sprint)</em></td></tr>
+          <tr><td class="time-col">~18h15</td><td class="event-col"><strong>Saída direto de Pau para o Tourmalet</strong> (até <strong>Place d&#8217;Arizes em La Mongie</strong>, na rampa leste, 1h28 · 85 km)</td></tr>
+          <tr><td class="time-col">~19h45</td><td class="event-col"><strong>Chegada a La Mongie</strong> — estacionar no Place d&#8217;Arizes / Parking P3-P4 (a ~5 km do cume) enquanto a estrada está aberta</td></tr>
+          <tr><td class="time-col">~20h00</td><td class="event-col">Jantar no motorhome · pernoite já posicionados pra etapa de amanhã</td></tr>
+        </table>
+        <div class="ride-stats">
+          <div class="ride-stat"><div class="ride-stat-value">65.7</div><div class="ride-stat-label">km
+</div>
+</div></div>
+          <div class="ride-stat-divider"></div>
+          <div class="ride-stat"><div class="ride-stat-value">1.420</div><div class="ride-stat-label">m D+</div></div>
+          <div class="ride-stat-divider"></div>
+          <div class="ride-stat"><div class="ride-stat-value">~3h30</div><div class="ride-stat-label">em sela</div></div>
+        </div>
+        <div class="col-tags">
+          <div class="col-tag"><div class="col-name">Hautacam</div><div class="col-alt">1.520 m</div></div>
+        </div>
+        <div style="margin-top: 12px;"><a href="https://www.komoot.com/tour/2959379669" class="komoot-inline" target="_blank" ><svg class="lucide-icon" data-lucide="map"></svg> Ver rota completa no Komoot — 65.7 km · 1.420 m D+</a></div>
+        <div class="day-alert"><strong><svg class="lucide-icon alert-icon" data-lucide="triangle-alert"></svg> Jogada-chave:</strong> em vez de voltar a Lourdes, seguir direto de Pau pro Tourmalet logo após a chegada. Subir cedo (ainda dia 08) garante pegar a estrada aberta e um bom lugar na rampa antes do cume. Estacionar no <strong>Place d&#8217;Arizes / Parking P3-P4 em La Mongie</strong> (rampa leste, ~5 km abaixo do cume) — é o ponto oficialmente recomendado pra motorhomes em dias do Tour, plano, com vista panorâmica.<br><br><strong>Confirmar próximo à data:</strong> horário de fechamento da estrada do Tourmalet no dia 08 — ligar pro turismo de Barèges-Tourmalet (+33 5 62 92 16 00). Cols grandes às vezes fecham na tarde da véspera.</div>
+      </div>
+    </div>
+</div>    <!-- 09/07 -->
+    <div class="day-card">
+<div class="day-card-inner">
+      <div class="day-date">
+        <div>
+          <div class="day-date-num">09</div>
+          <div class="day-date-month">Julho</div>
+          <div class="day-date-week">Quinta</div>
+        </div>
+        <span class="day-badge badge-tdf">Pedal + Etapa 6 ⭐</span>
+      </div>
+      <div class="day-body-col">
+<img decoding="async" class="day-photo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/View_from_the_top_of_the_Tourmalet_pass_at_stage_14_of_TDF_2024.jpg/1280px-View_from_the_top_of_the_Tourmalet_pass_at_stage_14_of_TDF_2024.jpg" alt="Vista do topo do Col du Tourmalet durante etapa do Tour de France 2024" loading="lazy">
+<div class="day-body-header">
+<div class="day-title">Tourmalet + Passagem da Etapa 6 (etapa rainha)</div>
+        <div class="day-location">🇫🇷 Tourmalet (pernoite) → Lourdes</div>
+</div>
+<div class="day-body-content">
+        <div class="day-alert" style="margin: 0 0 14px 0; background: #fee; border-left-color: #c44;">
+          <strong>⚠️ INFO OFICIAL — Etapa 6 do TDF (Pau → Gavarnie-Gèdre, 186,2 km):</strong><br>
+          • <strong>6h00:</strong> Estradas do Tourmalet TOTALMENTE FECHADAS pra carros e motorhomes — só ciclistas e pedestres podem passar<br>
+          • <strong>Estradas reabrem só após ~19h-19h30</strong> · saída só pelo lado leste (Sainte-Marie-de-Campan → Bagnères-de-Bigorre → Lourdes, ~1h15)<br>
+          • <strong>~15h15:</strong> Caravana publicitária passa pelo Tourmalet (170 veículos, brindes) — depois disso multidão e caminho intransitável<br>
+          • <strong>~16h25:</strong> Pelotão passa pelo Tourmalet (chegada em Gavarnie-Gèdre ~17h20)<br>
+          • <strong>86ª passagem do Tourmalet</strong> na história do TDF · etapa rainha dos Pirineus
+        </div>
+
+        <table class="schedule">
+          <tr><td class="time-col">06h00</td><td class="event-col">Estradas fecham · café da manhã no motorhome em La Mongie (Place d&#8217;Arizes)</td></tr>
+          <tr><td class="time-col">~07h00</td><td class="event-col"><strong>Pedalar Tourmalet</strong> · subida lado leste 4 km até o topo (2.115 m) · descida lado oeste 17 km até Luz-Saint-Sauveur · volta subindo lado oeste (17 km a 7,3% — a subida famosa) · descida 4 km até La Mongie</td></tr>
+          <tr><td class="time-col">~11h00</td><td class="event-col">Volta ao motorhome · banho/troca</td></tr>
+          <tr><td class="time-col">~12h00</td><td class="event-col">Almoço no motorhome (ou nos restaurantes de La Mongie centro)</td></tr>
+          <tr><td class="time-col">~14h00</td><td class="event-col"><strong>Subir a pé pela estrada até o ponto escolhido</strong> · objetivo: últimos 2 km antes do topo (gradiente 9-10%, ~2.000 m altitude) · ~30-40 min de caminhada · levar agasalho, água, lanche, cadeirinha</td></tr>
+          <tr><td class="time-col">~14h45</td><td class="event-col"><strong>POSICIONADOS no ponto definitivo</strong> · escolher local com boa vista das rampas finais · aguardar passagem</td></tr>
+          <tr><td class="time-col">~15h15</td><td class="event-col"><em><svg class="lucide-icon" data-lucide="flag"></svg> Caravana publicitária passa</em> · 170 veículos, brindes lançados (cuidado com objetos) · depois disso, multidão se concentra e caminho fica intransitável</td></tr>
+          <tr><td class="time-col">~16h25</td><td class="event-col"><em><svg class="lucide-icon" data-lucide="bike"></svg> PELOTÃO PASSA</em> · momento principal do dia · pelotão atacando a rampa final do Tourmalet</td></tr>
+          <tr><td class="time-col">~17h00</td><td class="event-col">Começar caminhada de volta ao motorhome em La Mongie · ~40 min (mais devagar pela multidão descendo)</td></tr>
+          <tr><td class="time-col">~17h45</td><td class="event-col">Chegada ao motorhome · descansar enquanto a estrada reabre</td></tr>
+          <tr><td class="time-col">~19h00</td><td class="event-col">Estradas reabrem progressivamente · sair via lado leste (proibido descer pelo lado oeste, onde estará todo o fluxo da etapa)</td></tr>
+          <tr><td class="time-col">~19h15</td><td class="event-col"><strong>Saída via Sainte-Marie-de-Campan → Bagnères-de-Bigorre → Lourdes</strong> · ~60 km · 1h15</td></tr>
+          <tr><td class="time-col">~20h30</td><td class="event-col">Chegada em Lourdes — Camping em Lourdes (ver lista de alternativas na seção 02)</td></tr>
+          <tr><td class="time-col">21h30</td><td class="event-col">Jantar em Lourdes</td></tr>
+        </table>
+        <div class="ride-stats">
+          <div class="ride-stat"><div class="ride-stat-value">44</div><div class="ride-stat-label">km</div></div>
+          <div class="ride-stat-divider"></div>
+          <div class="ride-stat"><div class="ride-stat-value">1.680</div><div class="ride-stat-label">m D+</div></div>
+          <div class="ride-stat-divider"></div>
+          <div class="ride-stat"><div class="ride-stat-value">~2h36</div><div class="ride-stat-label">em sela</div></div>
+        </div>
+        <div class="col-tags">
+          <div class="col-tag"><div class="col-name">Col du Tourmalet</div><div class="col-alt">2.115 m · 2x</div></div>
+        </div>
+        <div style="margin-top: 12px;"><a href="https://www.komoot.com/tour/3062461512" class="komoot-inline" target="_blank" ><svg class="lucide-icon" data-lucide="map"></svg> Ver rota completa no Komoot — 44 km · 1.680 m D+</a></div>
+        <div class="day-note">
+          <strong>📍 Onde se posicionar na rampa leste:</strong> os pontos mais cinematográficos ficam nos últimos 2 km antes do topo, entre 2.000-2.100 m de altitude. Gradiente 9-10% é o mais íngreme do lado leste — onde os ataques acontecem. La Mongie em si (centro da estação) é mais confortável mas longe do &#8220;drama&#8221;. Quanto mais perto do topo, mais lotado.<br><br>
+          <strong>🎒 Pra levar na caminhada até a rampa:</strong> agasalho (a 2.000 m tem vento mesmo em julho), 1L de água/pessoa, protetor solar, lanche pra ~3h de espera, câmera carregada, cadeirinha dobrável opcional. <strong>Não tem banheiro oficial no col — usar no motorhome antes de subir.</strong><br><br>
+          <strong>🚧 Saída pelo lado leste:</strong> obrigatório descer por Sainte-Marie-de-Campan. O lado oeste (Luz-Saint-Sauveur → Gavarnie) estará completamente bloqueado pela operação da etapa que finaliza em Gavarnie-Gèdre.
+        </div>
+      </div>
+    </div>
+</div>    <!-- 10/07 -->
+    <div class="day-card">
+<div class="day-card-inner">
+      <div class="day-date">
+        <div>
+          <div class="day-date-num">10</div>
+          <div class="day-date-month">Julho</div>
+          <div class="day-date-week">Sexta</div>
+        </div>
+        <span class="day-badge badge-bike">Pedal</span>
+      </div>
+      <div class="day-body-col">
+<img decoding="async" class="day-photo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Col_Aubisque.jpg/1280px-Col_Aubisque.jpg" alt="Estrada do Col d'Aubisque com placa do col e vista panorâmica dos Pirineus" loading="lazy">
+<div class="day-body-header">
+<div class="day-title">Aubisque + Soulor Loop</div>
+        <div class="day-location">🇫🇷 Lourdes (pedal) → Campan (motorhome à noite)</div>
+</div>
+<div class="day-body-content">
+<table class="schedule">
+          <tr><td class="time-col">07h30</td><td class="event-col">Acordar, café da manhã</td></tr>
+          <tr><td class="time-col">08h30</td><td class="event-col">Saída de Lourdes de bike</td></tr>
+          <tr><td class="time-col">~14h00</td><td class="event-col">Retorno a Lourdes</td></tr>
+          <tr><td class="time-col">14h30</td><td class="event-col">Almoço, banho, guardar bikes nos motorhomes</td></tr>
+          <tr><td class="time-col">~16h00</td><td class="event-col"><strong>Saída dos motorhomes para Campan</strong> (~1h06, 65 km)</td></tr>
+          <tr><td class="time-col">~17h00</td><td class="event-col">Chegada — Camping Municipal de Campan · 1 noite</td></tr>
+          <tr><td class="time-col">20h00</td><td class="event-col">Jantar em Campan</td></tr>
+        </table>
+        <div class="ride-stats">
+          <div class="ride-stat"><div class="ride-stat-value">103</div><div class="ride-stat-label">km
+</div>
+</div></div>
+          <div class="ride-stat-divider"></div>
+          <div class="ride-stat"><div class="ride-stat-value">2.600</div><div class="ride-stat-label">m D+</div></div>
+          <div class="ride-stat-divider"></div>
+          <div class="ride-stat"><div class="ride-stat-value">~5h</div><div class="ride-stat-label">em sela</div></div>
+        </div>
+        <div style="margin-top: 8px;">
+          <span class="route-tag">Lourdes <span class="route-arrow">→</span> Argelès-Gazost <span class="route-arrow">→</span> Col du Soulor <span class="route-arrow">→</span> Col d&#8217;Aubisque <span class="route-arrow">→</span> Laruns <span class="route-arrow">→</span> Lestelle-Betharram <span class="route-arrow">→</span> Lourdes</span>
+        </div>
+        <div class="col-tags">
+          <div class="col-tag"><div class="col-name">Col de Spandelles</div><div class="col-alt">1.378 m</div></div>
+          <div class="col-tag"><div class="col-name">Col du Soulor</div><div class="col-alt">1.474 m</div></div>
+          <div class="col-tag"><div class="col-name">Col d&#8217;Aubisque</div><div class="col-alt">1.709 m</div></div>
+          <div class="col-tag"><div class="col-name">Col de Couraduque</div><div class="col-alt">1.367 m</div></div>
+        </div>
+        <div style="margin-top: 12px;"><a href="https://www.komoot.com/tour/2959420536" class="komoot-inline" target="_blank" ><svg class="lucide-icon" data-lucide="map"></svg> Ver rota completa no Komoot — 103 km · 2.600 m D+</a></div>
+        <div class="day-note">O trecho Soulor → Aubisque pelo Cirque du Litor é uma estrada estreita esculpida na rocha acima do vale — uma das mais fotogênicas da Europa. Tem dois túneis curtos nesse trecho, vale levar luz.</div>
+      </div>
+    </div>
+</div>    <!-- 11/07 -->
+    <div class="day-card">
+<div class="day-card-inner">
+      <div class="day-date">
+        <div>
+          <div class="day-date-num">11</div>
+          <div class="day-date-month">Julho</div>
+          <div class="day-date-week">Sábado</div>
+        </div>
+        <span class="day-badge badge-bike">Pedal</span>
+      </div>
+      <div class="day-body-col">
+<img decoding="async" class="day-photo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Col_d%27Aspin_65-_ACVE.jpg/1280px-Col_d%27Aspin_65-_ACVE.jpg" alt="Topo do Col d'Aspin com ciclistas e motorhomes" loading="lazy">
+<div class="day-body-header">
+<div class="day-title">Hourquette d&#8217;Ancizan + Col d&#8217;Aspin</div>
+        <div class="day-location">🇫🇷 Campan → Pradelongue</div>
+</div>
+<div class="day-body-content">
+<table class="schedule">
+          <tr><td class="time-col">06h00</td><td class="event-col">Acordar</td></tr>
+          <tr><td class="time-col">08h00</td><td class="event-col">Saída de bike de <strong>Campan</strong> (Sainte-Marie)</td></tr>
+          <tr><td class="time-col">08h30</td><td class="event-col">Largada do pedal</td></tr>
+          <tr><td class="time-col">~14h00</td><td class="event-col">Retorno a Campan — almoço</td></tr>
+          <tr><td class="time-col">16h00</td><td class="event-col">Saída dos motorhomes para <strong>Camping Pradelongue</strong> (5 km a norte de Luchon, ~1h15)</td></tr>
+          <tr><td class="time-col">17h15</td><td class="event-col">Chegada ao <strong>Camping Pradelongue ★★★★</strong> em Moustajon · sanitários novos, piscina aquecida, supermercado vizinho</td></tr>
+          <tr><td class="time-col">20h00</td><td class="event-col">Jantar</td></tr>
+        </table>
+        <div class="ride-stats">
+          <div class="ride-stat"><div class="ride-stat-value">69.7</div><div class="ride-stat-label">km
+</div>
+</div></div>
+          <div class="ride-stat-divider"></div>
+          <div class="ride-stat"><div class="ride-stat-value">1.940</div><div class="ride-stat-label">m D+</div></div>
+          <div class="ride-stat-divider"></div>
+          <div class="ride-stat"><div class="ride-stat-value">~3h30</div><div class="ride-stat-label">em sela</div></div>
+        </div>
+        <div class="col-tags">
+          <div class="col-tag"><div class="col-name">Hourquette d&#8217;Ancizan</div><div class="col-alt">1.564 m</div></div>
+          <div class="col-tag"><div class="col-name">Col d&#8217;Aspin</div><div class="col-alt">1.489 m</div></div>
+        </div>
+        <div style="margin-top: 12px;"><a href="https://www.komoot.com/tour/2959466239" class="komoot-inline" target="_blank" ><svg class="lucide-icon" data-lucide="map"></svg> Ver rota completa no Komoot — 69.7 km · 1.940 m D+</a></div>
+        <div class="day-note">Dia mais duro em altimetria total da viagem — 2.600 m D+ em 110 km.</div>
+      </div>
+    </div>
+</div>    <!-- 12/07 -->
+    <div class="day-card">
+<div class="day-card-inner">
+      <div class="day-date">
+        <div>
+          <div class="day-date-num">12</div>
+          <div class="day-date-month">Julho</div>
+          <div class="day-date-week">Domingo</div>
+        </div>
+        <span class="day-badge badge-bike">Pedal</span>
+      </div>
+      <div class="day-body-col">
+<img decoding="async" class="day-photo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Col_de_Peyresourde_versant_HP.JPG/1280px-Col_de_Peyresourde_versant_HP.JPG" alt="Vista panorâmica do Col de Peyresourde nos Pirineus" loading="lazy">
+<div class="day-body-header">
+<div class="day-title">Superbagnères + Peyresourde</div>
+        <div class="day-location">🇫🇷 Bagnères-de-Luchon</div>
+</div>
+<div class="day-body-content">
+<table class="schedule">
+          <tr><td class="time-col">05h30</td><td class="event-col">Acordar cedo</td></tr>
+          <tr><td class="time-col">07h00</td><td class="event-col"><strong>Largada do pedal saindo do Pradelongue</strong> — descer 2 km até Luchon e começar a subida do Superbagnères</td></tr>
+          <tr><td class="time-col">~12h00</td><td class="event-col">Retorno ao <strong>Camping Pradelongue</strong> — banho, guardar bikes nos motorhomes</td></tr>
+          <tr><td class="time-col">13h00</td><td class="event-col"><strong>Saída dos motorhomes para Girona</strong> (~4h38 de estrada, 428 km)</td></tr>
+          <tr><td class="time-col">~17h45</td><td class="event-col">Chegada em Girona — <strong>seguir direto às lojas devolver as bikes</strong></td></tr>
+          <tr><td class="time-col">~17h50</td><td class="event-col"><strong>Devolução das 3 bikes</strong> — CycleTours (1ª parada, fecha 18h — chegar correndo)</td></tr>
+          <tr><td class="time-col">~18h30</td><td class="event-col"><strong>Devolução das 5 bikes</strong> — Velodrom (fecha 20h30, dá tempo)</td></tr>
+          <tr><td class="time-col">~19h15</td><td class="event-col">Estacionar no <strong>Camper Area Vayreda</strong> (mesmo da ida) — última noite</td></tr>
+          <tr><td class="time-col">21h00</td><td class="event-col"><strong>Jantar de encerramento em Girona</strong></td></tr>
+        </table>
+        <div class="ride-stats">
+          <div class="ride-stat"><div class="ride-stat-value">64.9</div><div class="ride-stat-label">km
+</div>
+</div></div>
+          <div class="ride-stat-divider"></div>
+          <div class="ride-stat"><div class="ride-stat-value">2.140</div><div class="ride-stat-label">m D+</div></div>
+          <div class="ride-stat-divider"></div>
+          <div class="ride-stat"><div class="ride-stat-value">~3h30</div><div class="ride-stat-label">em sela</div></div>
+        </div>
+        <div style="margin-top: 8px;">
+          <span class="route-tag">Luchon <span class="route-arrow">→</span> Superbagnères <span class="route-arrow">→</span> Col de Peyresourde <span class="route-arrow">→</span> Luchon</span>
+        </div>
+        <div class="col-tags">
+          <div class="col-tag"><div class="col-name">Superbagnères</div><div class="col-alt">1.804 m</div></div>
+          <div class="col-tag"><div class="col-name">Col de Peyresourde</div><div class="col-alt">1.569 m</div></div>
+        </div>
+        <div style="margin-top: 12px;"><a href="https://www.komoot.com/tour/2959483509" class="komoot-inline" target="_blank" ><svg class="lucide-icon" data-lucide="map"></svg> Ver rota completa no Komoot — 64.9 km · 2.140 m D+</a></div>
+        <div class="day-alert"><strong><svg class="lucide-icon alert-icon" data-lucide="triangle-alert"></svg> Atenção ao horário da CycleTours:</strong> ela fecha às 18h e vocês chegam ~17h45 — janela curta. O pedal precisa sair 7h em ponto e o transfer (~4h41) não pode atrasar. <strong>Plano B:</strong> confirmar antes com a CycleTours se aceitam devolução fora do horário (entrega de chave/local), caso a estrada atrase. A Velodrom (fecha 20h30) está tranquila. Só depois de devolver tudo, estacionar no camping e sair pro jantar de encerramento.</div>
+        <div class="day-alert" style="margin-top:8px;"><strong><svg class="lucide-icon" data-lucide="shuffle"></svg> Divisão do grupo:</strong> 7 pessoas seguem para Barcelona no dia 13 (B&B Viladecans + voo dia 14). 1 pessoa segue viagem solo a partir daqui.</div>
+      </div>
+    </div>
+</div>    <!-- 13/07 -->
+    <div class="day-card">
+<div class="day-card-inner">
+      <div class="day-date">
+        <div>
+          <div class="day-date-num">13</div>
+          <div class="day-date-month">Julho</div>
+          <div class="day-date-week">Segunda</div>
+        </div>
+        <span class="day-badge badge-travel">Retorno BCN</span>
+      </div>
+      <div class="day-body-col">
+<div class="day-body-header">
+<div class="day-title">Girona → Barcelona (devolução + check-in)</div>
+        <div class="day-location">🇪🇸 Girona → Viladecans</div>
+</div>
+<div class="day-body-content">
+<table class="schedule">
+          <tr><td class="time-col">07h15</td><td class="event-col">Acordar, café, arrumar tudo nos motorhomes</td></tr>
+          <tr><td class="time-col">08h00</td><td class="event-col"><strong>Saída de Girona para a McRent Gavà</strong> (~1h35, 120 km) — bikes já devolvidas ontem</td></tr>
+          <tr><td class="time-col">~09h30</td><td class="event-col">Chegada à McRent Gavà (Carrer de la Forja, 13)</td></tr>
+          <tr><td class="time-col">até 10h00</td><td class="event-col"><strong>Devolução dos 2 motorhomes</strong> — McRent Gavà <svg class="lucide-icon alert-icon" data-lucide="triangle-alert"></svg> prazo apertado</td></tr>
+          <tr><td class="time-col">~10h30</td><td class="event-col">Uber da McRent Gavà ao B&B Hotel Viladecans (~10 min)</td></tr>
+          <tr><td class="time-col">~11h00</td><td class="event-col">Guardar malas no hotel (guarda-volumes) — check-in só às 14h</td></tr>
+          <tr><td class="time-col">~11h30</td><td class="event-col"><strong>Grupo se divide em dois</strong> — programação diferente por perfil (ver abaixo)</td></tr>
+          <tr><td class="time-col">~22h30</td><td class="event-col"><strong>Reencontro no hotel</strong> — check-in feito e todos juntos pra última noite antes do voo</td></tr>
+        </table>
+        <div class="day-alert"><strong><svg class="lucide-icon alert-icon" data-lucide="triangle-alert"></svg> Janela apertada de manhã:</strong> motorhome vence 10h e Girona→McRent Gavà leva <strong>1h35</strong> (não subestimar). Sair de Girona às 8h em ponto dá ~25 min de margem. As bikes já foram devolvidas na noite do dia 12, então de manhã é só dirigir e entregar os motorhomes.<br><br><strong>Check-in só às 14h</strong> — o B&B tem guarda-volumes, então dá pra deixar as malas e o grupo se divide entre praia/outlet perto do hotel e Barcelona.</div>
+
+        <div class="day-options" style="margin-top: 14px;">
+          <div style="font-family: 'DM Sans', sans-serif; font-weight: 600; font-size: 13px; color: var(--bark); margin-bottom: 10px;">👥 Divisão do grupo a partir das 11h30:</div>
+
+          <div class="day-alert" style="margin-top: 0;"><strong><svg class="lucide-icon" data-lucide="waves"></svg> Grupo A — fica em Viladecans</strong><br>
+          Duas opções pra tarde tranquila perto do hotel:<br><br>
+          <strong>• Viladecans The Style Outlets</strong> (~10 min do hotel) — ~90% de marcas grandes a preço de desconto (Nike, Camper, Adidas, Desigual, Converse). Aberto segunda a sábado, no verão até 22h. Bom pra compras de última hora + almoço (Chalito argentino ou Sushisom) + conforto com ar-condicionado.<br><br>
+          <strong>• Platja de Gavà</strong> (~10 min de Uber) — praia tranquila e limpa, frequentada por locais, bem menos lotada que as do centro. Boa pra relaxar de frente pro mar depois da viagem intensa, com restaurantes com vista.<br><br>
+          <em>Grupo A janta em Viladecans/Gavà e faz check-in no hotel à tarde/noite.</em></div>
+
+          <div class="day-alert" style="margin-top: 8px;"><strong><svg class="lucide-icon" data-lucide="map-pin"></svg> Grupo B — vai a Barcelona</strong><br>
+          <strong>~11h30:</strong> Uber do hotel B&B Viladecans até <strong>Carrer de Ramon Llull, 480, Piso 9</strong> — apartamento do Marcio, região do Parc del Fòrum (~30-40 min de Uber, ~€30-40)<br>
+          <strong>~12h30:</strong> Pegar as encomendas com o amigo do Marcio<br>
+          <strong>Tarde livre em Barcelona</strong> — a região do apartamento é ótima pra dar uma última volta: Parc del Fòrum, Praia do Bogatell/Poblenou, bairro Poblenou (super gente boa, cheio de café, cervejaria e lojinhas), Diagonal Mar Shopping. Ou pegar metrô L4 direto pro centro se quiser passear na Rambla/Barri Gòtic.<br><br>
+          <strong>Jantar em Barcelona</strong> — Poblenou tem ótimas opções (Els Pescadors, La Cava, várias cervejarias artesanais), ou algo mais central se preferir.<br><br>
+          <strong>~22h30:</strong> Uber de volta pro B&B Hotel Viladecans (~30-40 min) — check-in e dormir.</div>
+        </div>
+</div></div>
+    </div>
+</div>    <!-- 14/07 -->
+    <div class="day-card">
+<div class="day-card-inner">
+      <div class="day-date">
+        <div>
+          <div class="day-date-num">14</div>
+          <div class="day-date-month">Julho</div>
+          <div class="day-date-week">Terça</div>
+        </div>
+        <span class="day-badge badge-travel">Volta</span>
+      </div>
+      <div class="day-body-col">
+<div class="day-body-header">
+<div class="day-title">Retorno — BCN → GRU</div>
+        <div class="day-location">🇪🇸 Barcelona → 🇧🇷 Guarulhos</div>
+</div>
+<div class="day-body-content">
+<table class="schedule">
+          <tr><td class="time-col">Até 12h</td><td class="event-col">Check-out do B&B Hotel Viladecans</td></tr>
+          <tr><td class="time-col">13h45</td><td class="event-col"><svg class="lucide-icon" data-lucide="plane"></svg> Voo BCN → GRU</td></tr>
+          <tr><td class="time-col">22h30</td><td class="event-col">Chegada em Guarulhos</td></tr>
+        </table>
+      
+</div>
+</div></div>
+</div>    </div>
+  </div>
+</section>
+
+<!-- SEÇÃO 05 — MAPA DOS MOTORHOMES -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-num">05</span>
+      <h2 class="section-title">Rota dos Motorhomes</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <p style="font-family: 'Lora', serif; font-size: 15px; color: var(--bark); line-height: 1.6; margin-bottom: 20px;">
+      Motorhomes retirados dia 06/07 (13h) e devolvidos dia 13/07 (até 10h). Saída e retorno em Barcelona, com base em <strong>Lourdes</strong> pros primeiros dias de pedal (incluindo desvio a Pau pra Etapa 5 e a subida ao <strong>Tourmalet</strong> na véspera da Etapa 6) e <strong>Pradelongue (Luchon)</strong> pro último. Volta passando por <strong>Girona</strong> pra devolver as bikes e pernoitar antes da entrega.
+    </p>
+
+    <div style="position: relative; width: 100%; height: 500px; border-radius: 14px; overflow: hidden; border: 1px solid var(--line); margin-bottom: 16px;">
+      <iframe
+        src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyBSXy3EIgAJRQuE_WnlG0jbSh33HNZQcfg&origin=MCRent+Barcelona+Airport,Gav%C3%A0&destination=Barcelona+El+Prat+Airport&waypoints=Camper+Area+Girona+Vayreda%7CCamping+Plein+Soleil+Lourdes%7CPlace+de+Verdun,Pau%7CPlace+d%27Arizes,La+Mongie%7CCamping+Plein+Soleil+Lourdes%7CCamping+Municipal+de+Campan%7CCamping+Pradelongue+Moustajon%7CCamper+Area+Girona+Vayreda&mode=driving&language=pt-BR&region=ES"
+        width="100%" height="100%"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Rota dos Motorhomes - TDF 2026">
+      </iframe>
+    </div>
+
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; flex-wrap: wrap; gap: 10px;">
+      <p style="font-family: 'Lora', serif; font-size: 13px; color: var(--warm-gray); margin: 0; line-height: 1.5;">
+        <em>Rota completa · Google Maps calcula automaticamente o trajeto entre os pontos.</em>
+      </p>
+      <a href="https://www.google.com/maps/dir/MCRent+Barcelona+Airport,+Carrer+de+la+Forja,+13,+08850+Gav%C3%A0,+Barcelona/Camper+Area+Girona+Vayreda/Camping+Plein+Soleil+Lourdes/Place+de+Verdun,+64000+Pau/Place+d'Arizes,+65200+La+Mongie/Camping+Plein+Soleil+Lourdes/Camping+Municipal+de+Campan,+65710+Campan/Camping+Pradelongue,+5+Les+Tretes,+31110+Moustajon/Camper+Area+Girona+Vayreda/Barcelona+El+Prat+Airport"
+         class="card-link" target="_blank" rel="noopener"
+         style="font-family: 'DM Sans', sans-serif; font-size: 13px; padding: 8px 14px; background: var(--moss); color: white; border-radius: 8px; text-decoration: none; font-weight: 600;">
+        ↗ Abrir rota completa no Google Maps
+      </a>
+    </div>
+
+    <div class="route-timeline">
+      <div class="route-day">
+        <div class="route-day-marker">06/07</div>
+        <div class="route-day-content">
+          <div class="route-day-title">Barcelona → Girona <span class="route-tag-pill">1h30 · 114 km</span></div>
+          <div class="route-day-stops">
+            <div class="route-stop"><strong>12h15</strong> Retirada McRent Gavà (Carrer de la Forja, 13) · confirmado</div>
+            <div class="route-stop"><strong>~14h45</strong> Camper Area Girona Vayreda · 1ª noite + retirada das 8 bikes</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="route-day">
+        <div class="route-day-marker">07/07</div>
+        <div class="route-day-content">
+          <div class="route-day-title">Girona → Lourdes <span class="route-tag-pill">4h54 · 465 km</span></div>
+          <div class="route-day-stops">
+            <div class="route-stop"><strong>16h30</strong> Saída de Girona após a tarde livre nas lojas</div>
+            <div class="route-stop"><strong>~21h30</strong> Camping em Lourdes · base dos dias de pedal nos Pirineus</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="route-day">
+        <div class="route-day-marker">08/07</div>
+        <div class="route-day-content">
+          <div class="route-day-title">Lourdes ⇄ Pau → Tourmalet <span class="route-tag-pill route-tag-tour">Etapa 5 + véspera Tourmalet</span></div>
+          <div class="route-day-stops">
+            <div class="route-stop"><strong>12h30</strong> Saída pra Pau · desvio de 45 min após o pedal no Hautacam</div>
+            <div class="route-stop"><strong>~17h45</strong> Chegada do pelotão na Place de Verdun (sprint)</div>
+            <div class="route-stop"><strong>~18h15</strong> Direto de Pau pro Tourmalet (1h28 · 85 km) — subir enquanto a estrada está aberta</div>
+            <div class="route-stop"><strong>~19h45</strong> Place d&#8217;Arizes / Parking P3-P4 em <strong>La Mongie</strong> (rampa leste, ~5 km do cume) · jantar + pernoite posicionados</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="route-day">
+        <div class="route-day-marker">09/07</div>
+        <div class="route-day-content">
+          <div class="route-day-title">Tourmalet → Lourdes <span class="route-tag-pill route-tag-tour">Etapa 6 · etapa rainha</span></div>
+          <div class="route-day-stops">
+            <div class="route-stop"><strong>Manhã</strong> Pedal saindo do ponto estacionado, volta antes do fechamento aos ciclistas</div>
+            <div class="route-stop"><strong>~14h30–15h30</strong> Passagem do pelotão pela rampa (vista privilegiada)</div>
+            <div class="route-stop"><strong>~19h</strong> Descida quando a estrada liberar (53 min · 53 km) · retorno ao camping em Lourdes</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="route-day">
+        <div class="route-day-marker">10/07</div>
+        <div class="route-day-content">
+          <div class="route-day-title">Lourdes → Campan <span class="route-tag-pill">pós-Aubisque · 1h06</span></div>
+          <div class="route-day-stops">
+            <div class="route-stop"><strong>~20h</strong> Camping Municipal de Campan · 1 noite (reserva por e-mail à Mairie)</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="route-day">
+        <div class="route-day-marker">11/07</div>
+        <div class="route-day-content">
+          <div class="route-day-title">Campan → Pradelongue <span class="route-tag-pill">pós-Hourquette/Aspin · 1h15</span></div>
+          <div class="route-day-stops">
+            <div class="route-stop"><strong>~17h15</strong> Camping Pradelongue ★★★★ (Moustajon, 5 km N de Luchon) · 1 noite (base do último pedal)</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="route-day">
+        <div class="route-day-marker">12/07</div>
+        <div class="route-day-content">
+          <div class="route-day-title">Pradelongue → Girona <span class="route-tag-pill route-tag-tour">4h38 · 428 km</span></div>
+          <div class="route-day-stops">
+            <div class="route-stop"><strong>13h</strong> Saída do Pradelongue após o pedal (Superbagnères/Peyresourde de manhã cedo)</div>
+            <div class="route-stop"><strong>~17h45</strong> Chegada em Girona — devolver as 8 bikes (CycleTours + Velodrom) e depois estacionar no Camper Area Vayreda · jantar de encerramento</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="route-day">
+        <div class="route-day-marker">13/07</div>
+        <div class="route-day-content">
+          <div class="route-day-title">Girona → McRent Gavà <span class="route-tag-pill">1h35 · 120 km</span></div>
+          <div class="route-day-stops">
+            <div class="route-stop"><strong>8h00</strong> Saída de Girona (bikes já devolvidas ontem) — margem pra devolução às 10h</div>
+            <div class="route-stop"><strong>até 10h</strong> Devolução dos motorhomes na McRent Gavà — fim da rota dos motorhomes</div>
+            <div class="route-stop"><strong>depois</strong> Uber da McRent Gavà ao B&B Hotel Viladecans · check-in 14h</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="route-day route-day-end">
+        <div class="route-day-marker route-day-marker-end">14/07</div>
+        <div class="route-day-content">
+          <div class="route-day-title">Voo de retorno</div>
+          <div class="route-day-stops">
+            <div class="route-stop"><strong>10h45</strong> Aeroporto BCN · voo AT 0965 às 13h45 (sem motorhome — já devolvido ontem)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- SEÇÃO 06 — LOJAS DE CICLISMO -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-num">06</span>
+      <h2 class="section-title">Lojas de Ciclismo em Girona</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <p style="font-family: 'Lora', serif; font-size: 15px; color: var(--bark); line-height: 1.6; margin-bottom: 20px;">
+      Girona é uma das mecas do ciclismo de estrada — muito pro do WorldTour mora e treina aqui, e a cidade tem lojas de primeira linha. Como o motorhome chega no dia 06 à tarde e já segue direto pras lojas (retirar as bikes na <strong>CycleTours</strong> e <strong>Velodrom</strong>), dá pra aproveitar e garimpar roupa e equipamento antes de tudo fechar. As duas lojas de roupa premium ficam no centro histórico, coladas uma na outra.
+    </p>
+
+    <div style="position: relative; width: 100%; height: 420px; border-radius: 14px; overflow: hidden; border: 1px solid var(--line); margin-bottom: 16px;">
+      <iframe
+        src="https://www.google.com/maps/embed/v1/search?key=AIzaSyBSXy3EIgAJRQuE_WnlG0jbSh33HNZQcfg&q=bike+shop+cycling+store+Girona&center=41.981,2.822&zoom=14&language=pt-BR&region=ES"
+        width="100%" height="100%"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Lojas de ciclismo em Girona">
+      </iframe>
+    </div>
+    <p style="font-family: 'Lora', serif; font-size: 13px; color: var(--warm-gray); margin: 0 0 24px 0; line-height: 1.5;">
+      <em>Mapa interativo das lojas de ciclismo de Girona. Os pontos exatos das lojas, do Velodrom e da CycleTours estão nos cards abaixo (cada um com link direto pro Google Maps).</em>
+    </p>
+
+    <div class="cards-grid">
+
+    <div class="card">
+      <svg class="card-icon-svg" data-lucide="shirt"></svg>
+      <div class="card-eyebrow">Roupa premium · Centro histórico · ⭐ 4.9</div>
+      <div class="card-title">Twenty One Cycling</div>
+      <div class="card-detail"><strong>Endereço:</strong> Rambla de la Llibertat, 29, 17004 Girona</div>
+      <div class="card-detail"><strong>Horário:</strong> 11h30–14h e 15h–20h · fecha domingo</div>
+      <div class="card-detail">Roupa premium com design feito em Barcelona. A queridinha do centro — ótimo lugar pra se equipar ou se inspirar. Atendimento muito elogiado.</div>
+      <div class="card-links">
+        <a href="https://maps.google.com/?q=Twenty+One+Cycling+Girona" class="card-link" target="_blank">↗ Google Maps</a>
+        <a href="https://twentyonecycling.cc/" class="card-link" target="_blank">↗ Site</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <svg class="card-icon-svg" data-lucide="shirt"></svg>
+      <div class="card-eyebrow">Roupa premium · Centro histórico · ⭐ 4.5</div>
+      <div class="card-title">Rocacorba Clothing</div>
+      <div class="card-detail"><strong>Endereço:</strong> Carrer de l&#8217;Argenteria, 12, 17004 Girona</div>
+      <div class="card-detail"><strong>Horário:</strong> 11h–14h e 16h30–20h · <strong>abre todos os dias, inclusive domingo</strong></div>
+      <div class="card-detail">Marca-cult local, batizada com o nome do col mais famoso de Girona. Roupa de altíssima qualidade. A 1 min da Twenty One — dá pra fazer as duas juntas.</div>
+      <div class="card-links">
+        <a href="https://maps.google.com/?q=Rocacorba+Clothing+Girona" class="card-link" target="_blank">↗ Google Maps</a>
+        <a href="http://www.rocacorbagirona.com/" class="card-link" target="_blank">↗ Site</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <svg class="card-icon-svg" data-lucide="store"></svg>
+      <div class="card-eyebrow">Equipamento + mecânica · ⭐ 4.8 (779 avaliações)</div>
+      <div class="card-title">Biking Point Girona</div>
+      <div class="card-detail"><strong>Endereço:</strong> Carrer Barcelona, 33, 17002 Girona</div>
+      <div class="card-detail"><strong>Horário:</strong> 10h–13h30 e 16h–20h30 · fecha sábado e domingo</div>
+      <div class="card-detail">A mais completa e movimentada da cidade. Mecânica rápida, bom preço. Fica pertinho do Velodrom — prática pra encaixar na retirada das bikes.</div>
+      <div class="card-links">
+        <a href="https://maps.google.com/?q=Biking+Point+Girona+Carrer+Barcelona" class="card-link" target="_blank">↗ Google Maps</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <svg class="card-icon-svg" data-lucide="store"></svg>
+      <div class="card-eyebrow">Equipamento técnico + bikes · ⭐ 5.0</div>
+      <div class="card-title">Triathlon Store Girona</div>
+      <div class="card-detail"><strong>Endereço:</strong> Carrer Nou, 14, 17001 Girona</div>
+      <div class="card-detail"><strong>Horário:</strong> 10h–19h30 · fecha segunda e domingo</div>
+      <div class="card-detail">Nota máxima. Bikes de alto nível (Factor, Canyon) e mecânica excelente. Não é a típica armadilha de turista. <strong>Atenção: fecha segunda</strong> — não funciona no dia 06.</div>
+      <div class="card-links">
+        <a href="https://maps.google.com/?q=Triathlon+Store+Girona+Carrer+Nou" class="card-link" target="_blank">↗ Google Maps</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <svg class="card-icon-svg" data-lucide="store"></svg>
+      <div class="card-eyebrow">Ponto Specialized + mecânica · ⭐ 4.6</div>
+      <div class="card-title">Bike Girona</div>
+      <div class="card-detail"><strong>Endereço:</strong> Carrer Emili Grahit, 64, 17003 Girona</div>
+      <div class="card-detail"><strong>Horário:</strong> 10h–13h30 e 16h30–20h · fecha domingo</div>
+      <div class="card-detail">Ponto Specialized. O dono é ex-campeão espanhol de MTB e foi mecânico da seleção espanhola. Serviço técnico de primeira.</div>
+      <div class="card-links">
+        <a href="https://maps.google.com/?q=Bike+Girona+Emili+Grahit" class="card-link" target="_blank">↗ Google Maps</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <svg class="card-icon-svg" data-lucide="bike"></svg>
+      <div class="card-eyebrow">Retirada de bikes · Loja 2 · ⭐ 4.8</div>
+      <div class="card-title">CycleTours Catalonia</div>
+      <div class="card-detail"><strong>Endereço:</strong> Carrer de Santa Eugènia, 11, local 5, 17005 Girona</div>
+      <div class="card-detail"><strong>Horário:</strong> 9h–14h e 15h–18h · <strong>abre todos os dias</strong></div>
+      <div class="card-detail">Onde ficam 3 das bikes (Pedro Turrini · Fábio Muritiba · Ricardo Romonsini). 1ª parada vindo do aeroporto (lado sul).</div>
+      <div class="card-links">
+        <a href="https://maps.google.com/?q=CycleTours+Catalonia+Girona" class="card-link" target="_blank">↗ Google Maps</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <svg class="card-icon-svg" data-lucide="bike"></svg>
+      <div class="card-eyebrow">Retirada de bikes · Loja 1 · ⭐ 4.6</div>
+      <div class="card-title">Velodrom Girona (Odeon)</div>
+      <div class="card-detail"><strong>Endereço:</strong> Pujada de Sant Domènec, 6, 17004 Girona</div>
+      <div class="card-detail"><strong>Horário:</strong> 10h30–13h30 e 16h30–20h30 · fecha domingo</div>
+      <div class="card-detail">Onde ficam 5 das bikes (Marcio · Felipe · Adriano · Iago · Lucas). Loja-templo num prédio antigo, com café. Vale a visita mesmo sem comprar.</div>
+      <div class="card-links">
+        <a href="https://maps.google.com/?q=Velodrom+Girona+Sant+Domenec" class="card-link" target="_blank">↗ Google Maps</a>
+        <a href="https://www.velodrom.cc/" class="card-link" target="_blank">↗ Site</a>
+      </div>
+    </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- SEÇÃO 07 — LOURDES BASE PRINCIPAL -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-num">07</span>
+      <h2 class="section-title">Lourdes — Base Principal</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <p style="font-family: 'Lora', serif; font-size: 15px; color: var(--bark); line-height: 1.6; margin-bottom: 20px;">
+      Lourdes é a base dos dias pedalando nos Pireneus — 2 noites em um camping local (07→08 e 09→10) com o desvio do Tourmalet no meio. Como Camping La Forêt está sem vagas (e em julho com TDF na região todos os campings são disputados), montamos uma lista de alternativas na seção 02. Aqui ficam os melhores comércios da região pra abastecer o motorhome, lavar roupa, tomar café e jantar bem — organizados por categoria, com distância aproximada do centro de Lourdes.
+    </p>
+
+    <div style="position: relative; width: 100%; height: 420px; border-radius: 14px; overflow: hidden; border: 1px solid var(--line); margin-bottom: 30px;">
+      <iframe
+        src="https://www.google.com/maps/embed/v1/search?key=AIzaSyBSXy3EIgAJRQuE_WnlG0jbSh33HNZQcfg&q=supermarch%C3%A9+restaurant+caf%C3%A9+Lourdes&center=43.0945,-0.048&zoom=15&language=pt-BR&region=FR"
+        width="100%" height="100%"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Comércios em Lourdes — centro e arredores">
+      </iframe>
+    </div>
+
+    <h3 style="font-family: 'Lora', serif; font-size: 22px; color: var(--moss); margin: 0 0 14px 0; font-weight: 500;">🛒 Supermercados</h3>
+    <div class="cards-grid">
+
+    <details class="card-collapsible">
+      <summary>
+        <div class="card-thumb-icon"><svg data-lucide="shopping-cart"></svg></div>
+        <div class="card-summary-content">
+          <div class="card-eyebrow">Compras grandes · 2,6 km do Camping · ⭐ 3,9</div>
+          <div class="card-title">Carrefour Market Lourdes</div>
+          <div class="card-summary-line">Mercado completo · ideal pra abastecer o motorhome · seg-sáb 8h30-19h30</div>
+        </div>
+        <svg class="card-chevron" data-lucide="chevron-down"></svg>
+      </summary>
+      <div class="card-collapsible-body">
+        <div class="card-detail"><strong>Endereço:</strong> 4 Rue Lucien Pourxet, 65100 Lourdes</div>
+        <div class="card-detail"><strong>Horário:</strong> Seg-Sáb 8h30-19h30 · Domingo 9h-12h30</div>
+        <div class="card-detail"><strong>Telefone:</strong> +33 5 62 42 76 30</div>
+        <div class="card-detail">A escolha principal pra compras grandes — comida, bebidas, itens de viagem. <strong>Vantagem dupla:</strong> tem a Laverie Revolution Laundry no mesmo prédio, dá pra fazer mercado e lavar roupa ao mesmo tempo.</div>
+        <div class="card-links">
+          <a href="https://maps.google.com/?q=Carrefour+Market+4+Rue+Lucien+Pourxet+Lourdes" class="card-link" target="_blank">↗ Google Maps</a>
+        </div>
+      </div>
+    </details>
+
+    <details class="card-collapsible">
+      <summary>
+        <div class="card-thumb-icon"><svg data-lucide="apple"></svg></div>
+        <div class="card-summary-content">
+          <div class="card-eyebrow">Abastecimento rápido · 1,6 km do Camping · ⭐ 4,1</div>
+          <div class="card-title">Galeries Saint Honoré</div>
+          <div class="card-summary-line">Perto do Santuário · aberto todos os dias 8h-23h</div>
+        </div>
+        <svg class="card-chevron" data-lucide="chevron-down"></svg>
+      </summary>
+      <div class="card-collapsible-body">
+        <div class="card-detail"><strong>Endereço:</strong> 1 Pl. Merlasse, 65100 Lourdes</div>
+        <div class="card-detail"><strong>Horário:</strong> Todos os dias 8h-23h</div>
+        <div class="card-detail">Bom pra água, snacks, café da manhã e itens básicos. <strong>Horário esticado</strong> (até 23h, fim de semana incluído) — útil pra reposição rápida à noite ou no domingo, quando o Carrefour Market fecha cedo.</div>
+        <div class="card-links">
+          <a href="https://maps.google.com/?q=Galeries+Saint+Honor%C3%A9+Lourdes" class="card-link" target="_blank">↗ Google Maps</a>
+        </div>
+      </div>
+    </details>
+
+    <details class="card-collapsible">
+      <summary>
+        <div class="card-thumb-icon"><svg data-lucide="store"></svg></div>
+        <div class="card-summary-content">
+          <div class="card-eyebrow">Reposição rápida · 2,4 km do Camping · ⭐ 3,9</div>
+          <div class="card-title">Carrefour City</div>
+          <div class="card-summary-line">Centro · seg-sáb 7h-22h · domingo manhã</div>
+        </div>
+        <svg class="card-chevron" data-lucide="chevron-down"></svg>
+      </summary>
+      <div class="card-collapsible-body">
+        <div class="card-detail"><strong>Endereço:</strong> 7 Pl. Marcadal, 65100 Lourdes</div>
+        <div class="card-detail"><strong>Horário:</strong> Seg-Sáb 7h-22h · Domingo 9h-13h</div>
+        <div class="card-detail"><strong>Telefone:</strong> +33 5 62 95 40 56</div>
+        <div class="card-detail">Próximo ao centro. Útil pra reposição rápida quando estiver indo a Lourdes pra outra atividade · abre cedo (7h) e fecha tarde, bom pra antes/depois do pedal.</div>
+        <div class="card-links">
+          <a href="https://maps.google.com/?q=Carrefour+City+Pl.+Marcadal+Lourdes" class="card-link" target="_blank">↗ Google Maps</a>
+        </div>
+      </div>
+    </details>
+
+    <details class="card-collapsible">
+      <summary>
+        <div class="card-thumb-icon"><svg data-lucide="store"></svg></div>
+        <div class="card-summary-content">
+          <div class="card-eyebrow">Reposição rápida · 2,4 km do Camping · ⭐ 3,7</div>
+          <div class="card-title">MONOPRIX</div>
+          <div class="card-summary-line">Centro · todos os dias 8h-20h</div>
+        </div>
+        <svg class="card-chevron" data-lucide="chevron-down"></svg>
+      </summary>
+      <div class="card-collapsible-body">
+        <div class="card-detail"><strong>Endereço:</strong> 9 Pl. du Champ Commun, 65100 Lourdes</div>
+        <div class="card-detail"><strong>Horário:</strong> Seg-Sáb 8h-20h · Domingo 8h-19h30</div>
+        <div class="card-detail"><strong>Telefone:</strong> +33 5 62 94 63 44</div>
+        <div class="card-detail">Mercado + bazar/roupas. Bom pra qualquer reposição no centro. Aberto domingo o dia todo.</div>
+        <div class="card-links">
+          <a href="https://maps.google.com/?q=MONOPRIX+Lourdes" class="card-link" target="_blank">↗ Google Maps</a>
+        </div>
+      </div>
+    </details>
+
+    </div>
+
+    <h3 style="font-family: 'Lora', serif; font-size: 22px; color: var(--moss); margin: 36px 0 14px 0; font-weight: 500;">🧺 Lavanderias</h3>
+    <div class="cards-grid">
+
+    <details class="card-collapsible">
+      <summary>
+        <div class="card-thumb-icon"><svg data-lucide="washing-machine"></svg></div>
+        <div class="card-summary-content">
+          <div class="card-eyebrow">Auto-serviço · 3,0 km do Camping · ⭐ 4,1</div>
+          <div class="card-title">Lux Laverie</div>
+          <div class="card-summary-line">Self-service · todos os dias 6h-22h · vizinha do camping</div>
+        </div>
+        <svg class="card-chevron" data-lucide="chevron-down"></svg>
+      </summary>
+      <div class="card-collapsible-body">
+        <div class="card-detail"><strong>Endereço:</strong> 6 Rue Capdangelle, 65100 Lourdes</div>
+        <div class="card-detail"><strong>Horário:</strong> Todos os dias 6h-22h (horário muito amplo)</div>
+        <div class="card-detail"><strong>Telefone:</strong> +33 6 03 54 57 82</div>
+        <div class="card-detail">Horário muito amplo (6h-22h todos os dias). Útil se o camping escolhido não tiver lavanderia ou estiver lotada. Pagamento por aproximação, sabão à venda no local.</div>
+        <div class="card-links">
+          <a href="https://maps.google.com/?q=Lux+Laverie+Lourdes" class="card-link" target="_blank">↗ Google Maps</a>
+        </div>
+      </div>
+    </details>
+
+    <details class="card-collapsible">
+      <summary>
+        <div class="card-thumb-icon"><svg data-lucide="washing-machine"></svg></div>
+        <div class="card-summary-content">
+          <div class="card-eyebrow">Mercado + lavanderia · 2,6 km do Camping · ⭐ 3,8</div>
+          <div class="card-title">Laverie Revolution Laundry</div>
+          <div class="card-summary-line">Junto ao Carrefour Market · combine compras + lavagem</div>
+        </div>
+        <svg class="card-chevron" data-lucide="chevron-down"></svg>
+      </summary>
+      <div class="card-collapsible-body">
+        <div class="card-detail"><strong>Endereço:</strong> Carrefour Market, 4 Rue Lucien Pourxet, 65100 Lourdes</div>
+        <div class="card-detail"><strong>Horário:</strong> Todos os dias 8h30-12h30 e 13h-19h</div>
+        <div class="card-detail"><strong>Telefone:</strong> +33 9 70 82 32 47</div>
+        <div class="card-detail">Localizada em frente ao Carrefour Market. Interface em inglês, paga com cartão. Máquina pequena €5 · grande (18kg) €10 · secadora €3. <strong>Aproveita pra fazer mercado enquanto a roupa lava.</strong></div>
+        <div class="card-links">
+          <a href="https://maps.google.com/?q=Laverie+Revolution+Carrefour+Lourdes" class="card-link" target="_blank">↗ Google Maps</a>
+        </div>
+      </div>
+    </details>
+
+    <details class="card-collapsible">
+      <summary>
+        <div class="card-thumb-icon"><svg data-lucide="washing-machine"></svg></div>
+        <div class="card-summary-content">
+          <div class="card-eyebrow">Centro · 2,5 km do Camping · ⭐ 4,2</div>
+          <div class="card-title">Lavomatique du Centre</div>
+          <div class="card-summary-line">Centro · todos os dias 7h-22h · máquinas modernas</div>
+        </div>
+        <svg class="card-chevron" data-lucide="chevron-down"></svg>
+      </summary>
+      <div class="card-collapsible-body">
+        <div class="card-detail"><strong>Endereço:</strong> 36 Av. du Maréchal Foch, 65100 Lourdes</div>
+        <div class="card-detail"><strong>Horário:</strong> Todos os dias 7h-22h</div>
+        <div class="card-detail">Self-service moderno, limpo, com 2 lavadoras de 7kg, 2 de 14kg e 2 secadoras. Aceita cartão (sem precisar de moedas). Instruções claras, parking ao lado. Boa alternativa se a Lux estiver lotada.</div>
+        <div class="card-links">
+          <a href="https://maps.google.com/?q=Lavomatique+du+Centre+Lourdes" class="card-link" target="_blank">↗ Google Maps</a>
+        </div>
+      </div>
+    </details>
+
+    </div>
+
+    <h3 style="font-family: 'Lora', serif; font-size: 22px; color: var(--moss); margin: 36px 0 14px 0; font-weight: 500;">☕ Cafés da manhã</h3>
+    <div class="cards-grid">
+
+    <details class="card-collapsible">
+      <summary>
+        <div class="card-thumb-icon"><svg data-lucide="coffee"></svg></div>
+        <div class="card-summary-content">
+          <div class="card-eyebrow">Top escolha · 1,8 km do Camping · ⭐ 4,9 (87 avaliações)</div>
+          <div class="card-title">Café Sainte-Marie</div>
+          <div class="card-summary-line">Perto do Santuário · todos os dias 6h30-19h · melhor café da cidade</div>
+        </div>
+        <svg class="card-chevron" data-lucide="chevron-down"></svg>
+      </summary>
+      <div class="card-collapsible-body">
+        <div class="card-detail"><strong>Endereço:</strong> 3 Rue Sainte-Marie, 65100 Lourdes</div>
+        <div class="card-detail"><strong>Horário:</strong> Todos os dias 6h30-19h (abre cedo, perfeito pré-pedal)</div>
+        <div class="card-detail"><strong>Telefone:</strong> +33 6 30 00 04 01</div>
+        <div class="card-detail">Nota quase perfeita (4,9). Cappuccino elogiado como o melhor da cidade, croissants frescos, serviço atencioso. <strong>Aposta pra café da manhã antes de pedalar</strong> — abre 6h30, sai pra rampa às 7h30 já cafeinado.</div>
+        <div class="card-links">
+          <a href="https://maps.google.com/?q=Caf%C3%A9+Sainte-Marie+Lourdes" class="card-link" target="_blank">↗ Google Maps</a>
+        </div>
+      </div>
+    </details>
+
+    <details class="card-collapsible">
+      <summary>
+        <div class="card-thumb-icon"><svg data-lucide="cake"></svg></div>
+        <div class="card-summary-content">
+          <div class="card-eyebrow">Café + confeitaria · 2,3 km do Camping · ⭐ 4,6</div>
+          <div class="card-title">La Pie Colette</div>
+          <div class="card-summary-line">Quiches, tortas, leite vegetal · seg fechado · 8h30-17h</div>
+        </div>
+        <svg class="card-chevron" data-lucide="chevron-down"></svg>
+      </summary>
+      <div class="card-collapsible-body">
+        <div class="card-detail"><strong>Endereço:</strong> 16 Pl. du Champ Commun, 65100 Lourdes</div>
+        <div class="card-detail"><strong>Horário:</strong> Ter-Sex 8h30-17h · Sáb 8h30-12h · <strong>Seg e Dom fechado</strong></div>
+        <div class="card-detail"><strong>Telefone:</strong> +33 5 67 45 74 80</div>
+        <div class="card-detail">Café aconchegante em frente ao mercado coberto. Famosa pelas quiches, sopas e tortas. Oferece leite vegetal. Boa opção pra um café da manhã/almoço mais reforçado.</div>
+        <div class="card-links">
+          <a href="https://maps.google.com/?q=La+Pie+Colette+Lourdes" class="card-link" target="_blank">↗ Google Maps</a>
+        </div>
+      </div>
+    </details>
+
+    <details class="card-collapsible">
+      <summary>
+        <div class="card-thumb-icon"><svg data-lucide="coffee"></svg></div>
+        <div class="card-summary-content">
+          <div class="card-eyebrow">Tradicional · 1,7 km do Camping · ⭐ 3,6</div>
+          <div class="card-title">Café Royal</div>
+          <div class="card-summary-line">Bar/restaurante histórico · todos os dias 8h-2h</div>
+        </div>
+        <svg class="card-chevron" data-lucide="chevron-down"></svg>
+      </summary>
+      <div class="card-collapsible-body">
+        <div class="card-detail"><strong>Endereço:</strong> 1 Pl. Mgr Laurence, 65100 Lourdes</div>
+        <div class="card-detail"><strong>Horário:</strong> Todos os dias 8h-2h (madrugada)</div>
+        <div class="card-detail"><strong>Telefone:</strong> +33 5 62 94 32 52</div>
+        <div class="card-detail">Tradicional, próximo ao Santuário. Avaliações mistas pra comida, mas funciona bem como ponto de encontro e horário esticado. Útil se precisar de algo aberto tarde.</div>
+        <div class="card-links">
+          <a href="https://maps.google.com/?q=Caf%C3%A9+Royal+Lourdes" class="card-link" target="_blank">↗ Google Maps</a>
+        </div>
+      </div>
+    </details>
+
+    </div>
+
+    <h3 style="font-family: 'Lora', serif; font-size: 22px; color: var(--moss); margin: 36px 0 14px 0; font-weight: 500;">🍽️ Restaurantes — jantar</h3>
+    <div class="cards-grid">
+
+    <details class="card-collapsible">
+      <summary>
+        <div class="card-thumb-icon"><svg data-lucide="utensils"></svg></div>
+        <div class="card-summary-content">
+          <div class="card-eyebrow">Regional do sudoeste · 2,2 km do Camping · ⭐ 4,9 (164 av.)</div>
+          <div class="card-title">Sur la tête des Canards</div>
+          <div class="card-summary-line">Confit de canard, peito de pato · ⚠️ fecha terça e quarta</div>
+        </div>
+        <svg class="card-chevron" data-lucide="chevron-down"></svg>
+      </summary>
+      <div class="card-collapsible-body">
+        <div class="card-detail"><strong>Endereço:</strong> 54 Rue de la Grotte, 65100 Lourdes</div>
+        <div class="card-detail"><strong>Horário:</strong> Qui-Dom 12h-14h e 19h-20h30/21h · <strong>Fecha terça e quarta</strong></div>
+        <div class="card-detail"><strong>Telefone:</strong> +33 6 33 18 07 08</div>
+        <div class="card-alert"><svg class="lucide-icon alert-icon" data-lucide="triangle-alert"></svg> <strong>Atenção aos dias fechados:</strong> dia 07 (terça) NÃO funciona. Dias possíveis em Lourdes pra vocês: <strong>quinta 09</strong> (mas vocês voltam tarde do Tourmalet) ou <strong>sexta 10</strong> à noite.</div>
+        <div class="card-detail">Restaurante minúsculo e charmoso, comandado pelo chef Mohamed. Cozinha típica do sudoeste francês — confit de canard, peito de pato, sobremesas caseiras. Nota máxima (4,9) e elogios consistentes. Mohamed não fala inglês — usar o tradutor do celular.</div>
+        <div class="card-detail" style="margin-top: 6px; font-size: 12px; color: #666;"><svg class="lucide-icon alert-icon" data-lucide="info"></svg> <strong>Reservar com antecedência</strong> pelo telefone — lugar pequeno e popular.</div>
+        <div class="card-links">
+          <a href="https://maps.google.com/?q=Sur+la+t%C3%AAte+des+Canards+Lourdes" class="card-link" target="_blank">↗ Google Maps</a>
+        </div>
+      </div>
+    </details>
+
+    <details class="card-collapsible">
+      <summary>
+        <div class="card-thumb-icon"><svg data-lucide="utensils"></svg></div>
+        <div class="card-summary-content">
+          <div class="card-eyebrow">Custo-benefício · 1,9 km do Camping · ⭐ 4,3 (943 av.)</div>
+          <div class="card-title">Le Bodegon</div>
+          <div class="card-summary-line">Brasserie clássica · todos os dias 9h-22h · ar-condicionado</div>
+        </div>
+        <svg class="card-chevron" data-lucide="chevron-down"></svg>
+      </summary>
+      <div class="card-collapsible-body">
+        <div class="card-detail"><strong>Endereço:</strong> 9 Av. du Paradis, 65100 Lourdes</div>
+        <div class="card-detail"><strong>Horário:</strong> Todos os dias 9h-22h</div>
+        <div class="card-detail"><strong>Telefone:</strong> +33 5 62 94 56 13</div>
+        <div class="card-detail">Brasserie clássica francesa/mediterrânea. <strong>Aposta segura pro dia da chegada</strong> — abre todos os dias, ar-condicionado, atendimento elogiado, preço bom. Cardápio variado, opções pra todos (inclusive vegetariano).</div>
+        <div class="card-links">
+          <a href="https://maps.google.com/?q=Le+Bodegon+Lourdes" class="card-link" target="_blank">↗ Google Maps</a>
+        </div>
+      </div>
+    </details>
+
+    <details class="card-collapsible">
+      <summary>
+        <div class="card-thumb-icon"><svg data-lucide="wine"></svg></div>
+        <div class="card-summary-content">
+          <div class="card-eyebrow">Noite especial · 2,1 km do Camping · ⭐ 4,6</div>
+          <div class="card-title">Le B &#8211; Restaurant & Bar</div>
+          <div class="card-summary-line">Sofisticado · só jantar 17h-23h30 · menu degustação</div>
+        </div>
+        <svg class="card-chevron" data-lucide="chevron-down"></svg>
+      </summary>
+      <div class="card-collapsible-body">
+        <div class="card-detail"><strong>Endereço:</strong> 66 Rue de la Grotte, 65100 Lourdes</div>
+        <div class="card-detail"><strong>Horário:</strong> Todos os dias 17h-23h30 (só jantar)</div>
+        <div class="card-detail"><strong>Telefone:</strong> +33 5 62 94 58 87</div>
+        <div class="card-detail">Restaurante do hotel Belfry & Spa. Menu degustação do chef Lionel Gomez, opções de foie gras, ambiente sofisticado. <strong>Pra uma noite especial</strong> (ex: comemorar a conclusão dos pedais nos Pirineus). Reservar com antecedência.</div>
+        <div class="card-links">
+          <a href="https://maps.google.com/?q=Le+B+Restaurant+Lourdes" class="card-link" target="_blank">↗ Google Maps</a>
+        </div>
+      </div>
+    </details>
+
+    <details class="card-collapsible">
+      <summary>
+        <div class="card-thumb-icon"><svg data-lucide="pizza"></svg></div>
+        <div class="card-summary-content">
+          <div class="card-eyebrow">Italiana · 1,9 km do Camping · ⭐ 4,4 (1.575 av.)</div>
+          <div class="card-title">Pizzeria Made in Italy</div>
+          <div class="card-summary-line">Pizza, massas, à beira do rio · seg fechado · ter-dom 7h30-1h</div>
+        </div>
+        <svg class="card-chevron" data-lucide="chevron-down"></svg>
+      </summary>
+      <div class="card-collapsible-body">
+        <div class="card-detail"><strong>Endereço:</strong> 113 Rue de la Grotte, 65100 Lourdes</div>
+        <div class="card-detail"><strong>Horário:</strong> Ter-Dom 7h30-1h · <strong>Seg fechado</strong></div>
+        <div class="card-detail"><strong>Telefone:</strong> +33 6 95 28 60 59</div>
+        <div class="card-detail">Pizzaria popularíssima de Lourdes (1.575 avaliações). Abre cedo (7h30) — apesar do nome, também serve cafés da manhã e refeições rápidas. Boa pra carregar carboidrato pré ou pós-pedal. Bem à beira do rio Gave.</div>
+        <div class="card-links">
+          <a href="https://maps.google.com/?q=Pizzeria+Made+in+Italy+Lourdes" class="card-link" target="_blank">↗ Google Maps</a>
+        </div>
+      </div>
+    </details>
+
+    <details class="card-collapsible">
+      <summary>
+        <div class="card-thumb-icon"><svg data-lucide="utensils-crossed"></svg></div>
+        <div class="card-summary-content">
+          <div class="card-eyebrow">Asiática · 1,7 km do Camping · ⭐ 4,4 (623 av.)</div>
+          <div class="card-title">Asian Delices Food</div>
+          <div class="card-summary-line">Comida filipina · todos os dias 11h30-21h · sair da rotina francesa</div>
+        </div>
+        <svg class="card-chevron" data-lucide="chevron-down"></svg>
+      </summary>
+      <div class="card-collapsible-body">
+        <div class="card-detail"><strong>Endereço:</strong> 15 Rue Sainte-Marie, 65100 Lourdes</div>
+        <div class="card-detail"><strong>Horário:</strong> Todos os dias 11h30-21h</div>
+        <div class="card-detail"><strong>Telefone:</strong> +33 6 26 10 21 91</div>
+        <div class="card-detail">Comida filipina autêntica. Boa opção pra <strong>fugir da rotina de comida francesa</strong> depois de alguns dias. Frango crispy elogiado, porções menores que prato francês mas saborosas.</div>
+        <div class="card-links">
+          <a href="https://maps.google.com/?q=Asian+Delices+Food+Lourdes" class="card-link" target="_blank">↗ Google Maps</a>
+        </div>
+      </div>
+    </details>
+
+    </div>
+
+    <div style="margin-top: 32px; padding: 18px 20px; background: rgba(135, 119, 87, 0.08); border-radius: 12px; font-family: 'Lora', serif; font-size: 14px; line-height: 1.7; color: var(--bark);">
+      <div style="font-family: 'DM Sans', sans-serif; font-weight: 600; font-size: 14px; color: var(--bark); margin-bottom: 12px;">📋 Plano sugerido</div>
+
+      <div style="margin-bottom: 14px;">
+        <strong>Dia 07 — Chegada à noite (~21h30 em Lourdes):</strong><br>
+        Chegando tarde e cansados de Girona, o ideal é <strong>aproveitar o restaurante La Bergerie</strong> dentro do próprio camping (cozinha regional) ou pedir uma das pizzas que eles fazem no forno. Sem precisar dirigir, sem sair do camping. Banho e dormir. Pela manhã, padaria do camping abre 8h30 com croissants frescos.
+      </div>
+
+      <div style="margin-bottom: 14px;">
+        <strong>Dias de pedal (08, 09, 10):</strong><br>
+        Café e padaria do camping pra sair pedalando cedo. Se quiser variar um dia, vale o <strong>Café Sainte-Marie</strong> (1,8 km, melhor café da cidade, abre 6h30). Lanches e barras pro pedal no <strong>mercadinho do próprio camping</strong> ou em uma parada no Carrefour City no caminho. À noite, comer no restaurante do camping ou ir ao centro pra um jantar especial — vale reservar uma noite no <strong>Sur la tête des Canards</strong> (cozinha do sudoeste, fecha terça e quarta) ou <strong>Le Bodegon</strong> (sempre aberto).
+      </div>
+
+      <div>
+        <strong>Sexta-feira 10 — última noite em Lourdes:</strong><br>
+        Boa noite pra reservar o <strong>Sur la tête des Canards</strong> (confit de canard regional) ou o <strong>Le B</strong> pra uma celebração mais sofisticada antes de seguir pros Pirineus de Aubisque/Soulor. Shuttle bus do camping ao centro, ou Uber/táxi se voltar tarde.
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- SEÇÃO 08 — COLS -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-num">08</span>
+      <h2 class="section-title">Cols Pedalados</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="cols-grid">
+
+    <div class="col-grid-item">
+      <div class="col-grid-num">01</div>
+      <div><div class="col-grid-name">Hautacam</div><div class="col-grid-day">08/07 · 1.520 m</div></div>
+    </div>
+    <div class="col-grid-item">
+      <div class="col-grid-num">02</div>
+      <div><div class="col-grid-name">Col du Tourmalet</div><div class="col-grid-day">09/07 · 2.115 m</div></div>
+    </div>
+    <div class="col-grid-item">
+      <div class="col-grid-num">03</div>
+      <div><div class="col-grid-name">Col de Spandelles</div><div class="col-grid-day">10/07 · 1.378 m</div></div>
+    </div>
+    <div class="col-grid-item">
+      <div class="col-grid-num">04</div>
+      <div><div class="col-grid-name">Col du Soulor</div><div class="col-grid-day">10/07 · 1.474 m</div></div>
+    </div>
+    <div class="col-grid-item">
+      <div class="col-grid-num">05</div>
+      <div><div class="col-grid-name">Col d&#8217;Aubisque</div><div class="col-grid-day">10/07 · 1.709 m</div></div>
+    </div>
+    <div class="col-grid-item">
+      <div class="col-grid-num">06</div>
+      <div><div class="col-grid-name">Col de Couraduque</div><div class="col-grid-day">10/07 · 1.367 m</div></div>
+    </div>
+    <div class="col-grid-item">
+      <div class="col-grid-num">07</div>
+      <div><div class="col-grid-name">Hourquette d&#8217;Ancizan</div><div class="col-grid-day">11/07 · 1.564 m</div></div>
+    </div>
+    <div class="col-grid-item">
+      <div class="col-grid-num">08</div>
+      <div><div class="col-grid-name">Col d&#8217;Aspin</div><div class="col-grid-day">11/07 · 1.489 m</div></div>
+    </div>
+    <div class="col-grid-item">
+      <div class="col-grid-num">09</div>
+      <div><div class="col-grid-name">Superbagnères</div><div class="col-grid-day">12/07 · 1.804 m</div></div>
+    </div>
+    <div class="col-grid-item">
+      <div class="col-grid-num">10</div>
+      <div><div class="col-grid-name">Col de Peyresourde</div><div class="col-grid-day">12/07 · 1.569 m</div></div>
+    </div>
+  
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    
+  <div>
+    <div class="footer-title">TDF 2026</div>
+    <div class="footer-sub">Barcelona · Girona · Pirineus · 3–14 Julho</div>
+  </div>
+  <div style="text-align: right;">
+    <div class="footer-sub">8 pessoas · 2 motorhomes</div>
+    <div class="footer-sub" style="margin-top: 4px;">10 cols · ~435 km · ~11k m D+</div>
+  </div>
+
+  </div>
+</footer>
+
+
+<script>if (window.lucide) lucide.createIcons();</script>
+</body>
+</html>
